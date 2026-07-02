@@ -3,12 +3,12 @@
     <channel>
         <title>Aside</title>
         <item>
-            <title>1.1.5</title>
-            <pubDate>Thu, 02 Jul 2026 06:05:04 +0200</pubDate>
-            <sparkle:version>7</sparkle:version>
-            <sparkle:shortVersionString>1.1.5</sparkle:shortVersionString>
+            <title>1.2.3</title>
+            <pubDate>Thu, 02 Jul 2026 12:51:50 +0200</pubDate>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>1.2.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.1.5/Aside.dmg" length="75046542" type="application/octet-stream" sparkle:edSignature="hazLkqoUSNzgdejn5tTEfSYz2IjTzo5d/3ugpSB+D7Bbev56iklEODyujh76GpMKMXRzoYeMj8WuJ22VSew9CQ=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.2.3/Aside.dmg" length="75159421" type="application/octet-stream" sparkle:edSignature="hihdtQFzz08XcnlCpJLml6tp9vkOgP0UzMI72TZU20J7g/uOAhbdaH06uSnQ9ch2yRndcxJ+jcw7OXyhAQlBBA=="/>
         </item>
     </channel>
 </rss>
