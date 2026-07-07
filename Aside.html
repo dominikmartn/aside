@@ -12,31 +12,22 @@
 </style>
 </head>
 <body>
-<h2>Aside 1.3.8</h2>
+<!-- notes-for: 1.3.9 -->
+<!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
+     Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
+<h2>Aside 1.3.9</h2>
 
-<p class="intro">A reliability release: recordings, summaries, and your audio are a lot harder to lose.</p>
+<p class="intro">The device-switch crash is gone for good, and the app is back to its monochrome look.</p>
 
 <h3>Fixed</h3>
 <ul>
-  <li><b>Meetings that recorded but never got a summary.</b> A settings quirk could quietly wipe the copilot connection, so notes came back blank. Summaries generate reliably now.</li>
-  <li><b>A crashed recording no longer loses its audio.</b> Each session keeps its own recovery copy, so starting a new meeting can't delete the one you still need to recover.</li>
-  <li><b>Recording stops when you hang up.</b> Ending a call you started recording from now stops it on its own again, instead of capturing the empty room afterward.</li>
-  <li><b>Your mic survives a device switch.</b> Swapping to AirPods (or any input) mid-meeting no longer silently kills your side of the recording; the same for the other participants when your output device changes.</li>
-  <li>A crash when your audio device changed in the middle of a recording.</li>
-  <li>If saving a note ever fails, you now see it in the window with a Retry, instead of the meeting quietly disappearing.</li>
-  <li>Editing a meeting's title or summary works again.</li>
-  <li>Search no longer skips or duplicates rows.</li>
-  <li>Declining the microphone during first-run setup no longer leaves you stuck on that screen.</li>
-  <li>Microphone and calendar access now work on a fresh Mac.</li>
-  <li>A meeting you already recorded no longer keeps popping back up at the notch.</li>
+  <li><b>The crash when switching audio devices mid-recording is fixed at the root.</b> Connecting or dropping AirPods could still, in rare timing, take the whole app down while it rebuilt the microphone. That failure is now caught and retried quietly &mdash; the recording keeps going.</li>
 </ul>
 
-<h3>Improved</h3>
+<h3>Changed</h3>
 <ul>
-  <li>Overlapping calendar events are titled after the call you're actually in, not a longer background block.</li>
-  <li>Start recording with no copilot set up and Aside tells you up front. You still get the transcript, just no written summary until you add one.</li>
-  <li>When a summary can't be written, Aside now tells you why (and lets you try again) instead of a generic message.</li>
-  <li>First launch shows the speech model downloading with a progress bar, instead of a silent wait.</li>
+  <li><b>Monochrome again.</b> The blue accent is gone: Start recording, the pin, and everything else are back to the clean black-and-white look.</li>
+  <li><b>Copy always copies the transcript.</b> The copy button puts the full transcript on your clipboard no matter which tab you're on.</li>
 </ul>
 
 <h3>If you're new here</h3>
@@ -44,7 +35,6 @@
   <li><b>No API key needed.</b> Aside Cloud is the default: download, open, and it works. You can still use your own provider in Settings. (Cloud is invite-only while in testing, so a new install asks for an invite code once.)</li>
   <li><b>The Aside window is home.</b> Every meeting note, search, and tags in one place, plus what's next on your calendar with one click to join or record. Open it with &#8984;&#8997;A or from the menu bar.</li>
   <li><b>Keep it open during a meeting.</b> Pin the panel so it stays up while you work, then click the &#10005; to close it.</li>
-  <li>Ask questions across all your past meetings, not just the one you have open.</li>
 </ul>
 
 <p>Anonymous usage counts (never your content) help guide what gets built next, with an off switch in Settings. Crash reports can be shared too, opt-in and technical only, never audio or transcripts.</p>
