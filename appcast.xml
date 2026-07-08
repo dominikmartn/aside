@@ -3,10 +3,10 @@
     <channel>
         <title>Aside</title>
         <item>
-            <title>1.4.0</title>
-            <pubDate>Wed, 08 Jul 2026 07:09:27 +0200</pubDate>
-            <sparkle:version>24</sparkle:version>
-            <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
+            <title>1.4.1</title>
+            <pubDate>Wed, 08 Jul 2026 12:40:47 +0200</pubDate>
+            <sparkle:version>25</sparkle:version>
+            <sparkle:shortVersionString>1.4.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -23,29 +23,22 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.4.0 -->
+<!-- notes-for: 1.4.1 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.4.0</h2>
+<h2>Aside 1.4.1</h2>
 
-<p class="intro">Transcripts now show who actually spoke, action items know their owner, and back-to-back meetings no longer trip over each other.</p>
-
-<h3>New</h3>
-<ul>
-  <li><b>Real names in the transcript.</b> When Aside can tell who is who from your calendar and the conversation, the transcript says "Anna" and "Mike" instead of "Speaker 1" and "Speaker 2" &mdash; in the clickable player and in the saved note.</li>
-  <li><b>Action items name their owner.</b> Every item now leads with who it belongs to ("You: send the deck"), so a glance tells you what's yours.</li>
-</ul>
+<p class="intro">A reliability release. If Aside ever hiccups at the end of a meeting, your recording is kept and offered back to you, and you can now throw a meeting away before it turns into a note.</p>
 
 <h3>Fixed</h3>
 <ul>
-  <li><b>Back-to-back meetings work.</b> Starting a new recording while the previous meeting was still being processed could silently break live transcription. The new recording now captures from the first second and the transcript catches up on its own.</li>
-  <li>Search results no longer stick to the top of the list.</li>
+  <li><b>Meetings no longer get stuck on "Writing the note".</b> Switching your audio output at the moment a meeting ended (an AirPods or headset handoff) could freeze note-writing indefinitely. That is fixed.</li>
+  <li><b>Your recording is never lost when that happens.</b> If Aside is stopped or quits mid-meeting, it now reliably offers to recover the recording the next time you open the window, and starting another meeting can no longer bury that offer. Older interrupted recordings are found and offered too.</li>
 </ul>
 
-<h3>Changed</h3>
+<h3>New</h3>
 <ul>
-  <li><b>A nicer segmented control.</b> The Notes/Transcript switcher is a sliding pill now &mdash; clearer selection, smoother feel, everywhere it appears.</li>
-  <li>The Settings header sits properly centered.</li>
+  <li><b>Discard a meeting while recording.</b> A discard button now sits next to Pause during a recording. Use it to stop and throw the meeting away without transcribing it or writing a note. It asks once to confirm.</li>
 </ul>
 
 <h3>If you're new here</h3>
@@ -60,7 +53,7 @@
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.4.0/Aside.dmg" length="5952902" type="application/octet-stream" sparkle:edSignature="mkAJUf8BqEnj/2O6zo8x+VLctmlC1+YvseNxyKHgu6+lwInGDVd2dttyM0WkPhuJoq5VPJLwQiNFtszYVRvaBA=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.4.1/Aside.dmg" length="5973495" type="application/octet-stream" sparkle:edSignature="958fbUeRCsRLI1pDuyEmBseX+dsFBc2xN+dmwpmQJuDWHBMuZC1irNVQoZHhl9F7h1D6R6yiW4LxJWlnOnXhBg=="/>
         </item>
     </channel>
 </rss>
