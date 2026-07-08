@@ -3,10 +3,10 @@
     <channel>
         <title>Aside</title>
         <item>
-            <title>1.3.9</title>
-            <pubDate>Tue, 07 Jul 2026 17:39:50 +0200</pubDate>
-            <sparkle:version>23</sparkle:version>
-            <sparkle:shortVersionString>1.3.9</sparkle:shortVersionString>
+            <title>1.4.0</title>
+            <pubDate>Wed, 08 Jul 2026 07:09:27 +0200</pubDate>
+            <sparkle:version>24</sparkle:version>
+            <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -23,22 +23,29 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.3.9 -->
+<!-- notes-for: 1.4.0 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.3.9</h2>
+<h2>Aside 1.4.0</h2>
 
-<p class="intro">The device-switch crash is gone for good, and the app is back to its monochrome look.</p>
+<p class="intro">Transcripts now show who actually spoke, action items know their owner, and back-to-back meetings no longer trip over each other.</p>
+
+<h3>New</h3>
+<ul>
+  <li><b>Real names in the transcript.</b> When Aside can tell who is who from your calendar and the conversation, the transcript says "Anna" and "Mike" instead of "Speaker 1" and "Speaker 2" &mdash; in the clickable player and in the saved note.</li>
+  <li><b>Action items name their owner.</b> Every item now leads with who it belongs to ("You: send the deck"), so a glance tells you what's yours.</li>
+</ul>
 
 <h3>Fixed</h3>
 <ul>
-  <li><b>The crash when switching audio devices mid-recording is fixed at the root.</b> Connecting or dropping AirPods could still, in rare timing, take the whole app down while it rebuilt the microphone. That failure is now caught and retried quietly &mdash; the recording keeps going.</li>
+  <li><b>Back-to-back meetings work.</b> Starting a new recording while the previous meeting was still being processed could silently break live transcription. The new recording now captures from the first second and the transcript catches up on its own.</li>
+  <li>Search results no longer stick to the top of the list.</li>
 </ul>
 
 <h3>Changed</h3>
 <ul>
-  <li><b>Monochrome again.</b> The blue accent is gone: Start recording, the pin, and everything else are back to the clean black-and-white look.</li>
-  <li><b>Copy always copies the transcript.</b> The copy button puts the full transcript on your clipboard no matter which tab you're on.</li>
+  <li><b>A nicer segmented control.</b> The Notes/Transcript switcher is a sliding pill now &mdash; clearer selection, smoother feel, everywhere it appears.</li>
+  <li>The Settings header sits properly centered.</li>
 </ul>
 
 <h3>If you're new here</h3>
@@ -53,7 +60,7 @@
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.3.9/Aside.dmg" length="5940674" type="application/octet-stream" sparkle:edSignature="iR48WEWvfk/ITbTashfu4h/i5LfG1XXD1orH605jLUezFGSGSQftezXysUmL23UUZyykj3gbAdt0qGx+vqacBQ=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.4.0/Aside.dmg" length="5952902" type="application/octet-stream" sparkle:edSignature="mkAJUf8BqEnj/2O6zo8x+VLctmlC1+YvseNxyKHgu6+lwInGDVd2dttyM0WkPhuJoq5VPJLwQiNFtszYVRvaBA=="/>
         </item>
     </channel>
 </rss>
