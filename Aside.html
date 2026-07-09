@@ -12,29 +12,30 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.4.1 -->
+<!-- notes-for: 1.4.2 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.4.1</h2>
+<h2>Aside 1.4.2</h2>
 
-<p class="intro">A reliability release. If Aside ever hiccups at the end of a meeting, your recording is kept and offered back to you, and you can now throw a meeting away before it turns into a note.</p>
+<p class="intro">Clearer recording controls, and a fix so a forgotten pause can never quietly cost you a meeting.</p>
 
 <h3>Fixed</h3>
 <ul>
-  <li><b>Meetings no longer get stuck on "Writing the note".</b> Switching your audio output at the moment a meeting ended (an AirPods or headset handoff) could freeze note-writing indefinitely. That is fixed.</li>
-  <li><b>Your recording is never lost when that happens.</b> If Aside is stopped or quits mid-meeting, it now reliably offers to recover the recording the next time you open the window, and starting another meeting can no longer bury that offer. Older interrupted recordings are found and offered too.</li>
+  <li><b>A forgotten pause is now obvious.</b> While paused, the clock turns yellow, reads "Paused", and stops counting — and it now shows recorded time, not wall-clock. If a meeting is paused and never resumed, you see it at a glance instead of finding an almost-empty recording afterwards.</li>
 </ul>
 
-<h3>New</h3>
+<h3>Improved</h3>
 <ul>
-  <li><b>Discard a meeting while recording.</b> A discard button now sits next to Pause during a recording. Use it to stop and throw the meeting away without transcribing it or writing a note. It asks once to confirm.</li>
+  <li><b>Pick a tag from a dropdown.</b> Click the tag field on a meeting and your existing tags drop down right away — pick one instead of remembering and retyping it. Typing still filters the list.</li>
+  <li><b>A cleaner recording bar.</b> The waveform and time sit on the left; pin and discard are compact icons; Pause and Stop are clear buttons. In the notch the waveform is on the left and the timer on the right, matching the window.</li>
+  <li><b>A quiet consent reminder.</b> While recording, Aside reminds you to make sure everyone agrees to being recorded. Recording laws vary by place, and many require everyone's consent.</li>
 </ul>
 
 <h3>If you're new here</h3>
 <ul>
   <li><b>No API key needed.</b> Aside Cloud is the default: download, open, and it works. You can still use your own provider in Settings. (Cloud is invite-only while in testing, so a new install asks for an invite code once.)</li>
   <li><b>The Aside window is home.</b> Every meeting note, search, and tags in one place, plus what's next on your calendar with one click to join or record. Open it with &#8984;&#8997;A or from the menu bar.</li>
-  <li><b>Keep it open during a meeting.</b> Pin the panel so it stays up while you work, then click the &#10005; to close it.</li>
+  <li><b>Keep it open during a meeting.</b> Pin the panel so it stays up while you work; click the pin again to unpin, or press Esc to close.</li>
 </ul>
 
 <p>Anonymous usage counts (never your content) help guide what gets built next, with an off switch in Settings. Crash reports can be shared too, opt-in and technical only, never audio or transcripts.</p>
