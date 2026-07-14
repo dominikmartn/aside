@@ -12,30 +12,39 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.4.2 -->
+<!-- notes-for: 1.4.4 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.4.2</h2>
+<h2>Aside 1.4.4</h2>
 
-<p class="intro">Clearer recording controls, and a fix so a forgotten pause can never quietly cost you a meeting.</p>
+<p class="intro">A stability release: the mid-meeting crash is fixed, a crashed meeting now recovers itself, and the transcript keeps to one language.</p>
 
 <h3>Fixed</h3>
 <ul>
-  <li><b>A forgotten pause is now obvious.</b> While paused, the clock turns yellow, reads "Paused", and stops counting — and it now shows recorded time, not wall-clock. If a meeting is paused and never resumed, you see it at a glance instead of finding an almost-empty recording afterwards.</li>
+  <li><b>The mid-meeting crash is fixed.</b> A race in the live transcript could corrupt memory and take the whole app down while you were recording. Thanks for the crash reports, they led straight to it.</li>
+  <li><b>Crashed meetings recover themselves.</b> If Aside ever quits during a recording, the next launch rebuilds the note on its own: the library opens on the recovering meeting, and it lands in your list with a Recovered badge. No more hidden recovery offer to find.</li>
+  <li><b>The transcript no longer flips languages.</b> Aside now detects the meeting's language once at the start and sticks to it, instead of re-guessing every few seconds and jumping between German and English mid-meeting.</li>
+  <li><b>First launch transcribes correctly.</b> The starter model was paired with the wrong tokenizer and produced garbage until the full model finished downloading. Fresh installs transcribe properly from the first meeting.</li>
+  <li><b>Recordings can't silently vanish.</b> If saving the audio fails, or a crashed meeting can't be read back, Aside now keeps the backup and tells you, instead of quietly dropping the recording.</li>
+  <li><b>You'll know if only your mic is captured.</b> When the call audio drops mid-meeting (for example switching to AirPods), Aside now warns you it went mic-only, instead of recording just you for the rest of the call without a word.</li>
+  <li><b>Chat no longer garbles.</b> Asking a follow-up while the previous answer is still streaming used to scramble that answer. It doesn't anymore.</li>
+  <li><b>Fewer crashes.</b> Closing the lid or unplugging a monitor mid-recording, and a few odd transcript cases, no longer crash the app.</li>
+  <li><b>Errors are actually visible.</b> When a recording won't start or a note won't save, you now see why, instead of it failing behind a hidden window.</li>
 </ul>
 
 <h3>Improved</h3>
 <ul>
-  <li><b>Pick a tag from a dropdown.</b> Click the tag field on a meeting and your existing tags drop down right away — pick one instead of remembering and retyping it. Typing still filters the list.</li>
-  <li><b>A cleaner recording bar.</b> The waveform and time sit on the left; pin and discard are compact icons; Pause and Stop are clear buttons. In the notch the waveform is on the left and the timer on the right, matching the window.</li>
-  <li><b>A quiet consent reminder.</b> While recording, Aside reminds you to make sure everyone agrees to being recorded. Recording laws vary by place, and many require everyone's consent.</li>
+  <li><b>Chat answers are formatted.</b> Headings, bullets and bold in the copilot's replies now render properly instead of showing raw markup.</li>
+  <li><b>Copy copies what you're looking at.</b> On the Notes tab it copies the notes; on the Transcript tab it copies the transcript.</li>
+  <li><b>The live transcript follows along.</b> It scrolls with the conversation, and if you scroll up to read back, it stays put instead of yanking you down.</li>
+  <li><b>Regenerate a missing summary.</b> If a meeting saved without a summary because the copilot was unreachable, you can generate it later from the saved transcript.</li>
+  <li><b>The pin is clearer.</b> It fills in when the panel is held open, so the state is obvious at a glance.</li>
 </ul>
 
-<h3>If you're new here</h3>
+<h3>Privacy</h3>
 <ul>
-  <li><b>No API key needed.</b> Aside Cloud is the default: download, open, and it works. You can still use your own provider in Settings. (Cloud is invite-only while in testing, so a new install asks for an invite code once.)</li>
-  <li><b>The Aside window is home.</b> Every meeting note, search, and tags in one place, plus what's next on your calendar with one click to join or record. Open it with &#8984;&#8997;A or from the menu bar.</li>
-  <li><b>Keep it open during a meeting.</b> Pin the panel so it stays up while you work; click the pin again to unpin, or press Esc to close.</li>
+  <li><b>An honest explanation of your data.</b> Audio and transcription stay on your Mac; transcript text is sent only to the AI you pick, to write summaries and answer questions. The privacy page now says exactly this.</li>
+  <li><b>Hardened.</b> Meeting text can no longer try to hijack the copilot, and your notes and recordings are stored with tighter file permissions.</li>
 </ul>
 
 <p>Anonymous usage counts (never your content) help guide what gets built next, with an off switch in Settings. Crash reports can be shared too, opt-in and technical only, never audio or transcripts.</p>
