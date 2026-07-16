@@ -3,10 +3,10 @@
     <channel>
         <title>Aside</title>
         <item>
-            <title>1.5.0</title>
-            <pubDate>Thu, 16 Jul 2026 08:58:32 +0200</pubDate>
-            <sparkle:version>29</sparkle:version>
-            <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
+            <title>1.5.1</title>
+            <pubDate>Thu, 16 Jul 2026 13:19:07 +0200</pubDate>
+            <sparkle:version>30</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -23,47 +23,24 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.5.0 -->
+<!-- notes-for: 1.5.1 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.5.0</h2>
+<h2>Aside 1.5.1</h2>
 
-<p class="intro">Your coding agents can now read your meetings, speaker detection got rebuilt, and recordings end themselves when you hang up.</p>
-
-<h3>New: agent access</h3>
-<ul>
-  <li><b>Claude Code and Codex can read your meeting notes.</b> Aside is now an MCP server: connect your agent with one click in Settings, and it can search meetings, read notes and transcripts, and pull context into whatever you're building. Your vault also gets an AGENTS.md so agents know their way around.</li>
-  <li><b>Live meeting access, only if you say so.</b> With a separate toggle (off by default), an agent can follow the current meeting's transcript as it happens. While one is actually reading, the recording header shows an Agents chip; one click cuts access. The moment you discard a recording, agents lose the live tail too.</li>
-</ul>
-
-<h3>Speaker detection, rebuilt</h3>
-<ul>
-  <li><b>A two-person call is two speakers again.</b> On open speakers, the other side arrived twice (once through the call, once as echo in your mic) and got split into phantom speakers. Aside now separates the call audio from your mic and attributes every word to whoever actually carries it.</li>
-  <li><b>Names come from your calendar.</b> Speakers are only renamed to people who are actually on the invite, so a misheard word can no longer rebaptize your counterpart for the whole note.</li>
-  <li><b>In-person meetings stay in-person.</b> A few notification pings during a room meeting no longer flip it into call mode.</li>
-</ul>
+<p class="intro">A quick fix on top of 1.5.0.</p>
 
 <h3>Fixed</h3>
 <ul>
-  <li><b>Recordings end when the call does.</b> Auto-stop used to arm only when you started from the notch suggestion; now it arms whenever you hit record while in a call, from any button. In-person recordings still never stop themselves.</li>
-  <li><b>The in-call suggestion can be dismissed.</b> If you don't want to record, one click and the pill leaves you alone for that call.</li>
-  <li><b>Ask-answers render properly.</b> The library's ask box showed raw markdown asterisks; it now formats like everything else.</li>
-  <li><b>Tooltips behave.</b> Long ones wrap in a readable bubble instead of two words per line, and buttons that already say what they do lost theirs.</li>
+  <li><b>Settings open properly again.</b> Pressing Command-comma, or the Settings item in the app menu, could open an empty window instead of the real settings. Every way in now lands on the same place.</li>
 </ul>
 
-<h3>Improved</h3>
-<ul>
-  <li><b>Settings, reorganized.</b> Four calm sections — General, Copilot, Notes, Agents — with clearer controls throughout.</li>
-  <li><b>A proper launch.</b> The library opens with a brief splash instead of flashing an empty state.</li>
-  <li><b>The live transcript breathes.</b> Sentences group into paragraphs instead of one endless block.</li>
-  <li><b>Crash insurance got stronger.</b> Recovered meetings now rebuild with the same speaker quality as normal ones.</li>
-  <li><b>VoiceOver coverage.</b> Every icon-only control now has a label.</li>
-</ul>
+<p>If you're coming from an older version, 1.5.0 added agent access (your coding tools can read your meetings), rebuilt speaker detection, and made recordings end themselves when you hang up.</p>
 </body>
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.5.0/Aside.dmg" length="8874648" type="application/octet-stream" sparkle:edSignature="AmKDNGX7Ocp3X4dRynuJh3lYL/H8QHjs35OLJCjWNFnkc596rYVTAnZqcOPpXqcRXkhXa0OvqKIKAJYHiN9CCg=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.5.1/Aside.dmg" length="8877312" type="application/octet-stream" sparkle:edSignature="1UJ8miOonhViAMD9W3JkeMFuXWS1qZ3tpoitzITiDp5ImU6qrLm85maUOov+1Aimzm806/NRYzk0EDQ+SW6LAw=="/>
         </item>
     </channel>
 </rss>
