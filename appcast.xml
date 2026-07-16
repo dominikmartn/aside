@@ -3,10 +3,10 @@
     <channel>
         <title>Aside</title>
         <item>
-            <title>1.4.4</title>
-            <pubDate>Tue, 14 Jul 2026 09:41:54 +0200</pubDate>
-            <sparkle:version>28</sparkle:version>
-            <sparkle:shortVersionString>1.4.4</sparkle:shortVersionString>
+            <title>1.5.0</title>
+            <pubDate>Thu, 16 Jul 2026 08:58:32 +0200</pubDate>
+            <sparkle:version>29</sparkle:version>
+            <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -23,47 +23,47 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.4.4 -->
+<!-- notes-for: 1.5.0 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.4.4</h2>
+<h2>Aside 1.5.0</h2>
 
-<p class="intro">A stability release: the mid-meeting crash is fixed, a crashed meeting now recovers itself, and the transcript keeps to one language.</p>
+<p class="intro">Your coding agents can now read your meetings, speaker detection got rebuilt, and recordings end themselves when you hang up.</p>
+
+<h3>New: agent access</h3>
+<ul>
+  <li><b>Claude Code and Codex can read your meeting notes.</b> Aside is now an MCP server: connect your agent with one click in Settings, and it can search meetings, read notes and transcripts, and pull context into whatever you're building. Your vault also gets an AGENTS.md so agents know their way around.</li>
+  <li><b>Live meeting access, only if you say so.</b> With a separate toggle (off by default), an agent can follow the current meeting's transcript as it happens. While one is actually reading, the recording header shows an Agents chip; one click cuts access. The moment you discard a recording, agents lose the live tail too.</li>
+</ul>
+
+<h3>Speaker detection, rebuilt</h3>
+<ul>
+  <li><b>A two-person call is two speakers again.</b> On open speakers, the other side arrived twice (once through the call, once as echo in your mic) and got split into phantom speakers. Aside now separates the call audio from your mic and attributes every word to whoever actually carries it.</li>
+  <li><b>Names come from your calendar.</b> Speakers are only renamed to people who are actually on the invite, so a misheard word can no longer rebaptize your counterpart for the whole note.</li>
+  <li><b>In-person meetings stay in-person.</b> A few notification pings during a room meeting no longer flip it into call mode.</li>
+</ul>
 
 <h3>Fixed</h3>
 <ul>
-  <li><b>The mid-meeting crash is fixed.</b> A race in the live transcript could corrupt memory and take the whole app down while you were recording. Thanks for the crash reports, they led straight to it.</li>
-  <li><b>Crashed meetings recover themselves.</b> If Aside ever quits during a recording, the next launch rebuilds the note on its own: the library opens on the recovering meeting, and it lands in your list with a Recovered badge. No more hidden recovery offer to find.</li>
-  <li><b>The transcript no longer flips languages.</b> Aside now detects the meeting's language once at the start and sticks to it, instead of re-guessing every few seconds and jumping between German and English mid-meeting.</li>
-  <li><b>First launch transcribes correctly.</b> The starter model was paired with the wrong tokenizer and produced garbage until the full model finished downloading. Fresh installs transcribe properly from the first meeting.</li>
-  <li><b>Recordings can't silently vanish.</b> If saving the audio fails, or a crashed meeting can't be read back, Aside now keeps the backup and tells you, instead of quietly dropping the recording.</li>
-  <li><b>You'll know if only your mic is captured.</b> When the call audio drops mid-meeting (for example switching to AirPods), Aside now warns you it went mic-only, instead of recording just you for the rest of the call without a word.</li>
-  <li><b>Chat no longer garbles.</b> Asking a follow-up while the previous answer is still streaming used to scramble that answer. It doesn't anymore.</li>
-  <li><b>Fewer crashes.</b> Closing the lid or unplugging a monitor mid-recording, and a few odd transcript cases, no longer crash the app.</li>
-  <li><b>Errors are actually visible.</b> When a recording won't start or a note won't save, you now see why, instead of it failing behind a hidden window.</li>
+  <li><b>Recordings end when the call does.</b> Auto-stop used to arm only when you started from the notch suggestion; now it arms whenever you hit record while in a call, from any button. In-person recordings still never stop themselves.</li>
+  <li><b>The in-call suggestion can be dismissed.</b> If you don't want to record, one click and the pill leaves you alone for that call.</li>
+  <li><b>Ask-answers render properly.</b> The library's ask box showed raw markdown asterisks; it now formats like everything else.</li>
+  <li><b>Tooltips behave.</b> Long ones wrap in a readable bubble instead of two words per line, and buttons that already say what they do lost theirs.</li>
 </ul>
 
 <h3>Improved</h3>
 <ul>
-  <li><b>Chat answers are formatted.</b> Headings, bullets and bold in the copilot's replies now render properly instead of showing raw markup.</li>
-  <li><b>Copy copies what you're looking at.</b> On the Notes tab it copies the notes; on the Transcript tab it copies the transcript.</li>
-  <li><b>The live transcript follows along.</b> It scrolls with the conversation, and if you scroll up to read back, it stays put instead of yanking you down.</li>
-  <li><b>Regenerate a missing summary.</b> If a meeting saved without a summary because the copilot was unreachable, you can generate it later from the saved transcript.</li>
-  <li><b>The pin is clearer.</b> It fills in when the panel is held open, so the state is obvious at a glance.</li>
+  <li><b>Settings, reorganized.</b> Four calm sections — General, Copilot, Notes, Agents — with clearer controls throughout.</li>
+  <li><b>A proper launch.</b> The library opens with a brief splash instead of flashing an empty state.</li>
+  <li><b>The live transcript breathes.</b> Sentences group into paragraphs instead of one endless block.</li>
+  <li><b>Crash insurance got stronger.</b> Recovered meetings now rebuild with the same speaker quality as normal ones.</li>
+  <li><b>VoiceOver coverage.</b> Every icon-only control now has a label.</li>
 </ul>
-
-<h3>Privacy</h3>
-<ul>
-  <li><b>An honest explanation of your data.</b> Audio and transcription stay on your Mac; transcript text is sent only to the AI you pick, to write summaries and answer questions. The privacy page now says exactly this.</li>
-  <li><b>Hardened.</b> Meeting text can no longer try to hijack the copilot, and your notes and recordings are stored with tighter file permissions.</li>
-</ul>
-
-<p>Anonymous usage counts (never your content) help guide what gets built next, with an off switch in Settings. Crash reports can be shared too, opt-in and technical only, never audio or transcripts.</p>
 </body>
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.4.4/Aside.dmg" length="6054098" type="application/octet-stream" sparkle:edSignature="j1U5JddihU03RI6pTGastfRNtEQ8q0rAx81wqyr7pOqxSxOHRooIRELzedd75z7DFtxFNYBwU6c3hIP33mCXAQ=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.5.0/Aside.dmg" length="8874648" type="application/octet-stream" sparkle:edSignature="AmKDNGX7Ocp3X4dRynuJh3lYL/H8QHjs35OLJCjWNFnkc596rYVTAnZqcOPpXqcRXkhXa0OvqKIKAJYHiN9CCg=="/>
         </item>
     </channel>
 </rss>
