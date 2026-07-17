@@ -12,27 +12,16 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.5.2 -->
+<!-- notes-for: 1.5.3 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.5.2</h2>
+<h2>Aside 1.5.3</h2>
 
-<p class="intro">Cleaner speaker detection, tag management, and a consistent cursor.</p>
+<p class="intro">Recovering an interrupted meeting no longer gets stuck.</p>
 
 <h3>Fixed</h3>
 <ul>
-  <li><b>A two-person call stays two speakers.</b> One person's voice could still get split into several speakers over a long call. Aside now uses the calendar to know how many people are on a call, so a one-on-one comes back as just you and them.</li>
-  <li><b>No more stray transcript gibberish.</b> The odd control code (like <code>&lt;|startoftranscript|&gt;</code>) that leaked into the first transcript line is gone.</li>
-</ul>
-
-<h3>New</h3>
-<ul>
-  <li><b>Rename and delete tags.</b> Right-click a tag in the library to rename it everywhere or remove it from all meetings. The meetings stay; only the tag changes.</li>
-</ul>
-
-<h3>Improved</h3>
-<ul>
-  <li><b>The cursor behaves.</b> Consistent everywhere now: the arrow over buttons, the text cursor only over text, no more flicker.</li>
+  <li><b>Crash recovery can't hang anymore.</b> If your Mac shut down mid-meeting (battery died, or a crash), recovering that recording could get stuck on “Recovering this meeting…” forever. It now recovers reliably: it falls back to a faster model when the high-accuracy one isn't fully downloaded, shows download progress instead of a silent spinner, and gives you a clear message to retry if the network stalls — rather than spinning with no end. Your recorded audio was always kept safe on disk; this makes turning it back into a note dependable.</li>
 </ul>
 </body>
 </html>
