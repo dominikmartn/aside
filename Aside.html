@@ -12,16 +12,21 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.5.5 -->
+<!-- notes-for: 1.5.6 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.5.5</h2>
+<h2>Aside 1.5.6</h2>
 
-<p class="intro">Recording was broken in 1.5.3 and 1.5.4. This fixes it. Sorry about that.</p>
+<p class="intro">A small polish release for tooltips.</p>
 
 <h3>Fixed</h3>
 <ul>
-  <li><b>Recording works again.</b> Since 1.5.3, pressing Record failed with "The speech model failed to load: Model folder is not set." and nothing was captured. A change meant to stop the app from hanging on a slow model download also stopped it from looking for the models you already had. It knows where to find them again. Nothing to do on your side beyond this update, and your downloaded models were never touched.</li>
+  <li><b>Tooltips are no longer cut off.</b> Hovering a control at the notch (like the &times; on a meeting suggestion) showed a tooltip that was clipped by the notch's edge. Tooltips now render above the panel frame everywhere &mdash; at the notch, on the floating pill, in the panel, and in the Aside window.</li>
+</ul>
+
+<h3>Changed</h3>
+<ul>
+  <li><b>Fewer tooltips.</b> Buttons with a visible label (Join, Record, Stop) no longer repeat themselves in a tooltip. Tooltips stay where they add something: icon-only buttons and actions with non-obvious consequences.</li>
 </ul>
 </body>
 </html>
