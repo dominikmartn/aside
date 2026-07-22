@@ -12,17 +12,16 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.5.4 -->
+<!-- notes-for: 1.5.5 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.5.4</h2>
+<h2>Aside 1.5.5</h2>
 
-<p class="intro">Clean up several meetings at once, and bring your own model.</p>
+<p class="intro">Recording was broken in 1.5.3 and 1.5.4. This fixes it. Sorry about that.</p>
 
-<h3>New</h3>
+<h3>Fixed</h3>
 <ul>
-  <li><b>Select several meetings and delete them together.</b> Hold ⌘ to pick meetings one by one, ⇧ to take a whole run of them, ⌘A for everything the list is currently showing. Delete with ⌘⌫ or the right-click menu — one confirmation for the batch instead of one per meeting. Filter by a tag or search first and the selection follows what you see.</li>
-  <li><b>Bring your own model.</b> Aside Cloud stays the default and nothing changes if you're happy with it. If you'd rather run your notes through your own account, Settings now takes a key for Kimi, OpenAI, Anthropic, GLM, or a local Ollama.</li>
+  <li><b>Recording works again.</b> Since 1.5.3, pressing Record failed with "The speech model failed to load: Model folder is not set." and nothing was captured. A change meant to stop the app from hanging on a slow model download also stopped it from looking for the models you already had. It knows where to find them again. Nothing to do on your side beyond this update, and your downloaded models were never touched.</li>
 </ul>
 </body>
 </html>
