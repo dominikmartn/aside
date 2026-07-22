@@ -3,10 +3,10 @@
     <channel>
         <title>Aside</title>
         <item>
-            <title>1.5.6</title>
-            <pubDate>Wed, 22 Jul 2026 14:40:12 +0200</pubDate>
-            <sparkle:version>35</sparkle:version>
-            <sparkle:shortVersionString>1.5.6</sparkle:shortVersionString>
+            <title>1.5.7</title>
+            <pubDate>Wed, 22 Jul 2026 15:24:38 +0200</pubDate>
+            <sparkle:version>36</sparkle:version>
+            <sparkle:shortVersionString>1.5.7</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -23,27 +23,24 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.5.6 -->
+<!-- notes-for: 1.5.7 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.5.6</h2>
+<h2>Aside 1.5.7</h2>
 
-<p class="intro">A small polish release for tooltips.</p>
-
-<h3>Fixed</h3>
-<ul>
-  <li><b>Tooltips are no longer cut off.</b> Hovering a control at the notch (like the &times; on a meeting suggestion) showed a tooltip that was clipped by the notch's edge. Tooltips now render above the panel frame everywhere &mdash; at the notch, on the floating pill, in the panel, and in the Aside window.</li>
-</ul>
+<p class="intro">Tooltips, round two: quieter and consistent.</p>
 
 <h3>Changed</h3>
 <ul>
-  <li><b>Fewer tooltips.</b> Buttons with a visible label (Join, Record, Stop) no longer repeat themselves in a tooltip. Tooltips stay where they add something: icon-only buttons and actions with non-obvious consequences.</li>
+  <li><b>One tooltip system.</b> Every tooltip now uses the same style. Action buttons show theirs immediately; explanatory hints (like the transcript's "Play from&hellip;" or the tag field) wait a moment, the way macOS tooltips do &mdash; but without the sluggish native delay.</li>
+  <li><b>Fewer tooltips.</b> The &times; on the notch pill and the Record button in the Aside window no longer show one.</li>
+  <li><b>The Agents chip is just an indicator now.</b> While an agent reads your live transcript, the chip shows it &mdash; clicking it no longer switches agent access off. That control lives in Settings, where an accidental click can't reach it.</li>
 </ul>
 </body>
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.5.6/Aside.dmg" length="8989404" type="application/octet-stream" sparkle:edSignature="7DkjBGMln02M2DaWEENq/RLocFoO0V68xkm3kXtd3r19AVEY4uavMwFGI+VCUBRzgzL9aTq7s/TGqap8Ta7gDg=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.5.7/Aside.dmg" length="8986564" type="application/octet-stream" sparkle:edSignature="tfse+BKbgvkLTruBCXYIr4GXs+flr+4Yb9ucRbb6bh6jcHtdnjWJR/c4DHiiAQ3982LKCOn6M1Q24vpI81DtDw=="/>
         </item>
     </channel>
 </rss>
