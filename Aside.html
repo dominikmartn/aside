@@ -2,28 +2,36 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
 <style>
-  body { font: 13px -apple-system, sans-serif; color: #333; margin: 16px; }
+  body { font: 13px -apple-system, sans-serif; color: #333; background: #fff; margin: 16px; }
   h2 { font-size: 15px; margin: 0 0 10px; }
   h3 { font-size: 12px; margin: 14px 0 4px; color: #888; text-transform: none; }
   ul { margin: 4px 0; padding-left: 18px; }
   li { margin: 3px 0; }
   p.intro { margin: 0 0 12px; color: #555; }
+  @media (prefers-color-scheme: dark) {
+    /* Sparkle's release-notes WebView has no background of its own; without an explicit one it
+       falls through to the dark window → dark-on-dark. Set both text and ground in each mode. */
+    body { color: #ddd; background: #1e1e1e; }
+    h3 { color: #999; }
+    p.intro { color: #aaa; }
+  }
 </style>
 </head>
 <body>
-<!-- notes-for: 1.5.7 -->
+<!-- notes-for: 1.5.8 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.5.7</h2>
+<h2>Aside 1.5.8</h2>
 
-<p class="intro">Tooltips, round two: quieter and consistent.</p>
+<p class="intro">Updates that actually reach you.</p>
 
 <h3>Changed</h3>
 <ul>
-  <li><b>One tooltip system.</b> Every tooltip now uses the same style. Action buttons show theirs immediately; explanatory hints (like the transcript's "Play from&hellip;" or the tag field) wait a moment, the way macOS tooltips do &mdash; but without the sluggish native delay.</li>
-  <li><b>Fewer tooltips.</b> The &times; on the notch pill and the Record button in the Aside window no longer show one.</li>
-  <li><b>The Agents chip is just an indicator now.</b> While an agent reads your live transcript, the chip shows it &mdash; clicking it no longer switches agent access off. That control lives in Settings, where an accidental click can't reach it.</li>
+  <li><b>Update prompts come to the front.</b> When a new version is ready, Aside's update window now opens in front instead of hiding behind your other windows.</li>
+  <li><b>A quiet heads-up when an update is waiting.</b> Instead of popping a window on its own, Aside shows a gentle banner in the library and a line in Settings, so you install on your own time.</li>
+  <li><b>Readable release notes in dark mode.</b> These notes no longer show up as dark text on a dark background.</li>
 </ul>
 </body>
 </html>
