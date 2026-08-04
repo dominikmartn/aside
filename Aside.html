@@ -20,28 +20,21 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.6.0 -->
+<!-- notes-for: 1.6.1 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.6.0</h2>
+<h2>Aside 1.6.1</h2>
 
-<p class="intro">Your meeting notes are now a real document. Write in them, restructure them, drop things into them.</p>
-
-<h3>New</h3>
-<ul>
-  <li><b>Notes you can actually write in.</b> Press Return for a new paragraph, type <code>-</code> for a bullet, <code>##</code> for a heading, <code>[]</code> for a checkbox. The markdown characters disappear into what they mean as you type.</li>
-  <li><b>The formatting you expect.</b> Bold, italic, inline code, links, quotes, numbered lists and nested lists, plus dividers. Tab and Shift-Tab nest a list item, Return twice leaves it.</li>
-  <li><b>Drag files onto a note.</b> Images appear inline; documents become a page-shaped card you can click for a Quick Look preview. Everything is copied into your vault, so the note stays whole even if you move the original.</li>
-  <li><b>Right-click for formatting.</b> Every block type with its keyboard shortcut, and a tick next to the one you are in.</li>
-  <li><b>Select, undo and search across the whole note.</b> Selection spans blocks, undo covers structure changes, and Find works in the note.</li>
-</ul>
+<p class="intro">A stability release: two days of hunting down every bug we could find, about 85 fixes across the app.</p>
 
 <h3>Fixed</h3>
 <ul>
-  <li><b>Blank lines and indentation survive.</b> Opening a note no longer flattens its spacing or nesting.</li>
-  <li><b>Headings look like headings.</b> Three sizes instead of one, in the notes list and in the panel alike.</li>
-  <li><b>The page no longer jumps.</b> Ticking a checkbox halfway down a note keeps you where you were.</li>
-  <li><b>Notes stopped repainting constantly.</b> An open note was redrawing itself every frame, which showed up as a flickering text cursor and burnt battery for nothing.</li>
+  <li><b>No more "Transcribing on-device…" forever.</b> A rare deadlock could leave a finished meeting stuck on the transcribing step, taking the next meetings with it. Found, fixed, and covered by a test.</li>
+  <li><b>Call audio is captured more reliably.</b> The recording path was rebuilt so heavy load can no longer cause dropped or garbled stretches — both sides of a call land cleanly in the note, verified on real calls.</li>
+  <li><b>Sync conflicts are visible now.</b> If your vault and its git remote diverge, Aside tells you with a banner instead of silently retrying. Your local notes always win; nothing is merged destructively.</li>
+  <li><b>Notes survive the messy cases.</b> Recovery after a crash, notes-only meetings, attachments, and unusual line endings all round-trip through the vault without losing content.</li>
+  <li><b>Cleaner transcripts.</b> Stray transcription control tokens can no longer leak into a note, and speaker attribution got more careful about labeling someone "You" without evidence.</li>
+  <li><b>Dozens of smaller fixes</b> across recording, transcription, the panel, and settings — the long tail of a two-day bug hunt.</li>
 </ul>
 </body>
 </html>
