@@ -3,10 +3,10 @@
     <channel>
         <title>Aside</title>
         <item>
-            <title>1.6.1</title>
-            <pubDate>Tue, 04 Aug 2026 09:11:28 +0200</pubDate>
-            <sparkle:version>40</sparkle:version>
-            <sparkle:shortVersionString>1.6.1</sparkle:shortVersionString>
+            <title>1.6.2</title>
+            <pubDate>Wed, 05 Aug 2026 16:32:04 +0200</pubDate>
+            <sparkle:version>41</sparkle:version>
+            <sparkle:shortVersionString>1.6.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,27 +31,25 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.6.1 -->
+<!-- notes-for: 1.6.2 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.6.1</h2>
+<h2>Aside 1.6.2</h2>
 
-<p class="intro">A stability release: two days of hunting down every bug we could find, about 85 fixes across the app.</p>
+<p class="intro">The speech model now repairs itself. If you ever saw "The speech model failed to load" on every launch, this release is for you.</p>
 
 <h3>Fixed</h3>
 <ul>
-  <li><b>No more "Transcribing on-device…" forever.</b> A rare deadlock could leave a finished meeting stuck on the transcribing step, taking the next meetings with it. Found, fixed, and covered by a test.</li>
-  <li><b>Call audio is captured more reliably.</b> The recording path was rebuilt so heavy load can no longer cause dropped or garbled stretches — both sides of a call land cleanly in the note, verified on real calls.</li>
-  <li><b>Sync conflicts are visible now.</b> If your vault and its git remote diverge, Aside tells you with a banner instead of silently retrying. Your local notes always win; nothing is merged destructively.</li>
-  <li><b>Notes survive the messy cases.</b> Recovery after a crash, notes-only meetings, attachments, and unusual line endings all round-trip through the vault without losing content.</li>
-  <li><b>Cleaner transcripts.</b> Stray transcription control tokens can no longer leak into a note, and speaker attribution got more careful about labeling someone "You" without evidence.</li>
-  <li><b>Dozens of smaller fixes</b> across recording, transcription, the panel, and settings — the long tail of a two-day bug hunt.</li>
+  <li><b>A broken speech model heals itself.</b> If a model download was interrupted (crash, power loss, flaky Wi-Fi), Aside could get permanently stuck refusing to record. It now detects the broken files, clears them, and fetches a fresh copy automatically — recording works again within seconds.</li>
+  <li><b>Speaker detection heals the same way.</b> A damaged speaker-recognition cache no longer silently disables speaker labels forever; it is cleared and re-downloaded once.</li>
+  <li><b>Your license can't be lost to a damaged file.</b> A corrupted license file is set aside for recovery instead of being silently overwritten.</li>
+  <li><b>Crash recovery keeps its screenshots.</b> Housekeeping can no longer clean up a recovered meeting's images while its note is still being written.</li>
 </ul>
 </body>
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.6.1/Aside.dmg" length="142707072" type="application/octet-stream" sparkle:edSignature="0rhTKINrnT+LlOaBS7/xyOTZ8eD+peIBj1guVH8W9Qwek6SmotAVfsMi+rF1lmlOqMgavVpPgG+0DLPWyM1HCg=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.6.2/Aside.dmg" length="142994740" type="application/octet-stream" sparkle:edSignature="2FDDrJ0s0w1GQj1tl2ufQN+dtlUOm968Az1Y3MRvzWyqQqpqnlf/SXRuzBH4MjY21SM5KlHimBJhH1C22ofMBQ=="/>
         </item>
     </channel>
 </rss>
