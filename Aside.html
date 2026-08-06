@@ -20,19 +20,17 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.6.2 -->
+<!-- notes-for: 1.6.3 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.6.2</h2>
+<h2>Aside 1.6.3</h2>
 
-<p class="intro">The speech model now repairs itself. If you ever saw "The speech model failed to load" on every launch, this release is for you.</p>
+<p class="intro">A small, fast fix for a very visible bug: the meeting pill at the notch could flicker wildly. Thanks to the tester who filmed it.</p>
 
 <h3>Fixed</h3>
 <ul>
-  <li><b>A broken speech model heals itself.</b> If a model download was interrupted (crash, power loss, flaky Wi-Fi), Aside could get permanently stuck refusing to record. It now detects the broken files, clears them, and fetches a fresh copy automatically — recording works again within seconds.</li>
-  <li><b>Speaker detection heals the same way.</b> A damaged speaker-recognition cache no longer silently disables speaker labels forever; it is cleared and re-downloaded once.</li>
-  <li><b>Your license can't be lost to a damaged file.</b> A corrupted license file is set aside for recovery instead of being silently overwritten.</li>
-  <li><b>Crash recovery keeps its screenshots.</b> Housekeeping can no longer clean up a recovered meeting's images while its note is still being written.</li>
+  <li><b>The notch pill no longer flickers.</b> On some display scalings, resting the pointer near the pill's lower edge made the whole bar rapidly jump up and down. Hovering no longer changes the bar's size, so the jitter is gone.</li>
+  <li><b>Only one Aside runs at a time.</b> Launching a new copy while an old one was still running (say, opening an update straight from the download) left two invisible instances fighting over the notch &mdash; another way to get that flicker. The newest launch now takes over and the old one quits cleanly.</li>
 </ul>
 </body>
 </html>
