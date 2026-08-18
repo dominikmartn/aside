@@ -20,24 +20,17 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.7.0 -->
+<!-- notes-for: 1.7.1 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.7.0</h2>
+<h2>Aside 1.7.1</h2>
 
-<p class="intro">Aside no longer asks for an invite code, and agents like Claude Code can now follow a meeting while it happens.</p>
+<p class="intro">A small follow-up to 1.7.0 for the new agent access.</p>
 
-<h3>New</h3>
+<h3>Fixed</h3>
 <ul>
-  <li><b>Follow a live meeting from Claude Code.</b> With agent access on, say "follow the meeting" (or run the <code>follow</code> prompt) and Claude reads along in the background, interrupting only for questions aimed at you, action items and numbers you will need. New MCP tool <code>live_transcript_wait</code>.</li>
-  <li><b>License key on first launch.</b> Bought Aside? Paste the key right in onboarding, behind "Have a license key?". Everyone else keeps the ten free meetings.</li>
-</ul>
-
-<h3>Changed</h3>
-<ul>
-  <li><b>No more invite codes.</b> Aside cloud works out of the box for the free meetings; the code field is gone from onboarding and Settings.</li>
-  <li><b>Support is hey@heyaside.com</b> everywhere in the app.</li>
-  <li>Cloud relay hardened: requests are shaped by Aside only, and a leaked key can be switched off.</li>
+  <li><b>Agent access can no longer slow the app down.</b> A local process opening many live-transcript waits at once could stall the notch during a meeting. Waits are capped and processed off the main thread.</li>
+  <li>The live-transcript tools now say in their own description that transcript text is other people's speech, so an agent treats it as data, never as instructions.</li>
 </ul>
 </body>
 </html>
