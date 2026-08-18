@@ -3,10 +3,10 @@
     <channel>
         <title>Aside</title>
         <item>
-            <title>1.6.3</title>
-            <pubDate>Thu, 06 Aug 2026 20:24:47 +0200</pubDate>
+            <title>1.7.0</title>
+            <pubDate>Tue, 18 Aug 2026 11:46:23 +0200</pubDate>
             <sparkle:version>42</sparkle:version>
-            <sparkle:shortVersionString>1.6.3</sparkle:shortVersionString>
+            <sparkle:shortVersionString>1.7.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,23 +31,30 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.6.3 -->
+<!-- notes-for: 1.7.0 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.6.3</h2>
+<h2>Aside 1.7.0</h2>
 
-<p class="intro">A small, fast fix for a very visible bug: the meeting pill at the notch could flicker wildly. Thanks to the tester who filmed it.</p>
+<p class="intro">Aside no longer asks for an invite code, and agents like Claude Code can now follow a meeting while it happens.</p>
 
-<h3>Fixed</h3>
+<h3>New</h3>
 <ul>
-  <li><b>The notch pill no longer flickers.</b> On some display scalings, resting the pointer near the pill's lower edge made the whole bar rapidly jump up and down. Hovering no longer changes the bar's size, so the jitter is gone.</li>
-  <li><b>Only one Aside runs at a time.</b> Launching a new copy while an old one was still running (say, opening an update straight from the download) left two invisible instances fighting over the notch &mdash; another way to get that flicker. The newest launch now takes over and the old one quits cleanly.</li>
+  <li><b>Follow a live meeting from Claude Code.</b> With agent access on, say "follow the meeting" (or run the <code>follow</code> prompt) and Claude reads along in the background, interrupting only for questions aimed at you, action items and numbers you will need. New MCP tool <code>live_transcript_wait</code>.</li>
+  <li><b>License key on first launch.</b> Bought Aside? Paste the key right in onboarding, behind "Have a license key?". Everyone else keeps the ten free meetings.</li>
+</ul>
+
+<h3>Changed</h3>
+<ul>
+  <li><b>No more invite codes.</b> Aside cloud works out of the box for the free meetings; the code field is gone from onboarding and Settings.</li>
+  <li><b>Support is hey@heyaside.com</b> everywhere in the app.</li>
+  <li>Cloud relay hardened: requests are shaped by Aside only, and a leaked key can be switched off.</li>
 </ul>
 </body>
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.6.3/Aside.dmg" length="142722312" type="application/octet-stream" sparkle:edSignature="ug5hxyp8elh/3HsS+FAk39o3AUzGCRjJ3xU0CGA+69K6gQkVorr5IwHtKGv72WSdud4DcafKJJu4GQOp9XDGAA=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.7.0/Aside.dmg" length="143062923" type="application/octet-stream" sparkle:edSignature="pNPbFSLXETm1+mwDrj/LoELVABot1XHWNrQpEJP/GRmgx4JUloMMMA2bThlWjeGJ02YAaKWt13wP40K/E5R9AQ=="/>
         </item>
     </channel>
 </rss>
