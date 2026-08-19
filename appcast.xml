@@ -3,10 +3,10 @@
     <channel>
         <title>Aside</title>
         <item>
-            <title>1.7.3</title>
-            <pubDate>Wed, 19 Aug 2026 14:28:54 +0200</pubDate>
-            <sparkle:version>45</sparkle:version>
-            <sparkle:shortVersionString>1.7.3</sparkle:shortVersionString>
+            <title>1.7.4</title>
+            <pubDate>Wed, 19 Aug 2026 15:01:44 +0200</pubDate>
+            <sparkle:version>46</sparkle:version>
+            <sparkle:shortVersionString>1.7.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,17 +31,18 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.7.3 -->
+<!-- notes-for: 1.7.4 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.7.3</h2>
+<h2>Aside 1.7.4</h2>
 
-<p class="intro">Settings got a sidebar, agent follow mode no longer drops out mid-meeting, and a crash at launch now reaches us.</p>
+<p class="intro">Fixes a crash that hit the moment a call was detected, on top of everything in 1.7.3.</p>
 
 <h3>Fixed</h3>
 <ul>
+  <li><b>Crash right after launch when a call is running.</b> The five-minute call buffer started its microphone tap in the wrong thread context, and macOS stopped the app on the spot. Three tester reports from today pointed at the same line. Fixed, and the neighbouring callbacks got the same treatment.</li>
   <li><b>Agents stopped hearing the meeting after a while.</b> The bridge that feeds Claude Code and Codex accepted only sixteen connections per app run and then went quiet, which looked like "Aside isn't running". It now serves as many calls as the meeting takes.</li>
-  <li><b>First launch could crash on some Macs.</b> Onboarding samples the wallpaper to pick its tint; a grayscale wallpaper made that sampling throw, every launch, until onboarding was done. It now skips what it cannot read. A first launch interrupted mid-way can no longer leave a half-copied speech model behind either.</li>
+  <li><b>First launch could crash on some Macs.</b> Onboarding samples the wallpaper to pick its tint; a grayscale wallpaper made that sampling throw until onboarding was done. An interrupted first launch can no longer leave a half-copied speech model behind either.</li>
   <li><b>Crash reports at launch.</b> If Aside crashed while starting, the report never got to us. The reporter now runs first thing, so the next launch offers to send it.</li>
   <li><b>Copilot settings lost their padding</b> on some licenses. The cause was a settings card without a fixed size; it has one now.</li>
 </ul>
@@ -54,7 +55,7 @@
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.7.3/Aside.dmg" length="143103509" type="application/octet-stream" sparkle:edSignature="o4lRuEbuC190xwLOJDCQIT1KdXvrh2JD3kjva0G5OZzBQWw3UwwCsDrXbA421UAuT6zX1VgJs+/kXH7GSKRLCw=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.7.4/Aside.dmg" length="143103160" type="application/octet-stream" sparkle:edSignature="GcSzVkO9QLEu9qjX6/RNPo6lRuhqsTArr8IJHdzw0c8lhMWO1r1PmUE8sBQo73JLOMRZbNRRORrTbAEcRzKLCw=="/>
         </item>
     </channel>
 </rss>
