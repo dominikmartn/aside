@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<style>
+  body { font: 13px -apple-system, sans-serif; color: #333; background: #fff; margin: 16px; }
+  h2 { font-size: 15px; margin: 0 0 10px; }
+  h3 { font-size: 12px; margin: 14px 0 4px; color: #888; text-transform: none; }
+  ul { margin: 4px 0; padding-left: 18px; }
+  li { margin: 3px 0; }
+  p.intro { margin: 0 0 12px; color: #555; }
+  @media (prefers-color-scheme: dark) {
+    /* Sparkle's release-notes WebView has no background of its own; without an explicit one it
+       falls through to the dark window → dark-on-dark. Set both text and ground in each mode. */
+    body { color: #ddd; background: #1e1e1e; }
+    h3 { color: #999; }
+    p.intro { color: #aaa; }
+  }
+</style>
+</head>
+<body>
+<!-- notes-for: 1.7.6 -->
+<!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
+     Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
+<h2>Aside 1.7.6</h2>
+
+<p class="intro">Tag many meetings at once, pick your Copilot provider from a proper menu, and icons you can actually see.</p>
+
+<h3>New</h3>
+<ul>
+  <li><b>Tag several meetings in one step.</b> Select multiple meetings in the library (Cmd- or Shift-click), then tag them all at once — from the right-click menu or the field in the selection pane. Existing tags are suggested as you type.</li>
+  <li><b>Provider menu in Copilot settings.</b> Bringing your own model now picks the provider from a dropdown with full names instead of a cramped row of segments.</li>
+</ul>
+
+<h3>Improved</h3>
+<ul>
+  <li><b>Bolder icons everywhere.</b> Every outline icon moved to a heavier stroke, and the Settings sidebar now uses solid glyphs — small icons stay readable at small sizes.</li>
+  <li><b>Round buttons are one consistent control now</b>, with slightly larger glyphs — the settings lens, copy, share, delete and the transcript player all match.</li>
+</ul>
+
+<h3>Dictation (beta builds)</h3>
+<ul>
+  <li><b>The right language, reliably.</b> Detection now only considers the languages you actually speak (your system languages plus your fallback), needs two agreeing reads before it commits, and double-checks the whole recording when it landed somewhere unexpected. No more transcripts in a language you have never spoken.</li>
+  <li><b>Music ducks instead of toggling.</b> Dictation lowers your output volume while you speak and puts it back exactly where it was — replacing a play/pause keystroke that could start paused music.</li>
+</ul>
+</body>
+</html>
