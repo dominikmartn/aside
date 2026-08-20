@@ -3,10 +3,10 @@
     <channel>
         <title>Aside</title>
         <item>
-            <title>1.7.6</title>
-            <pubDate>Thu, 20 Aug 2026 12:47:53 +0200</pubDate>
+            <title>1.7.7</title>
+            <pubDate>Thu, 20 Aug 2026 20:43:23 +0200</pubDate>
             <sparkle:version>47</sparkle:version>
-            <sparkle:shortVersionString>1.7.6</sparkle:shortVersionString>
+            <sparkle:shortVersionString>1.7.7</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,35 +31,31 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.7.6 -->
+<!-- notes-for: 1.7.7 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.7.6</h2>
+<h2>Aside 1.7.7</h2>
 
-<p class="intro">Tag many meetings at once, pick your Copilot provider from a proper menu, and icons you can actually see.</p>
+<p class="intro">A more resilient microphone path, and for beta testers a dictation that keeps your first words.</p>
 
-<h3>New</h3>
+<h3>Fixed</h3>
 <ul>
-  <li><b>Tag several meetings in one step.</b> Select multiple meetings in the library (Cmd- or Shift-click), then tag them all at once — from the right-click menu or the field in the selection pane. Existing tags are suggested as you type.</li>
-  <li><b>Provider menu in Copilot settings.</b> Bringing your own model now picks the provider from a dropdown with full names instead of a cramped row of segments.</li>
-</ul>
-
-<h3>Improved</h3>
-<ul>
-  <li><b>Bolder icons everywhere.</b> Every outline icon moved to a heavier stroke, and the Settings sidebar now uses solid glyphs — small icons stay readable at small sizes.</li>
-  <li><b>Round buttons are one consistent control now</b>, with slightly larger glyphs — the settings lens, copy, share, delete and the transcript player all match.</li>
+  <li><b>The 5-minute pre-roll no longer gives up.</b> When the microphone was briefly busy while a call started, the pre-roll buffer silently stayed empty. It now retries until it gets the mic, so starting a recording late still brings the minutes before with it.</li>
+  <li><b>Recording problems tell us why.</b> When the microphone fails mid-recording, Aside now records the exact reason and the state of the audio device — the groundwork for fixing a rare mic dropout some of you have hit.</li>
 </ul>
 
 <h3>Dictation (beta builds)</h3>
 <ul>
-  <li><b>The right language, reliably.</b> Detection now only considers the languages you actually speak (your system languages plus your fallback), needs two agreeing reads before it commits, and double-checks the whole recording when it landed somewhere unexpected. No more transcripts in a language you have never spoken.</li>
-  <li><b>Music ducks instead of toggling.</b> Dictation lowers your output volume while you speak and puts it back exactly where it was — replacing a play/pause keystroke that could start paused music.</li>
+  <li><b>Your first words are no longer lost.</b> With Bluetooth headphones, dictation used to miss the opening words while the headset switched profiles — and your music turned muffled. Dictation now listens through the Mac's built-in microphone: no wait, no muffled music.</li>
+  <li><b>Nothing focused? Nothing lost.</b> Dictating without a text field focused used to vanish the text. It now stays on your clipboard, and the pill says so: press Cmd-V wherever you want it.</li>
+  <li><b>Calmer, livelier speech bars</b> that follow your voice instead of pumping on their own, and a pill that keeps its shape when you release the key.</li>
+  <li><b>Dictation gets its own onboarding step.</b> New installs try dictation right in the welcome flow — cursor in a field, hold the key, speak.</li>
 </ul>
 </body>
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.7.6-beta/Aside.dmg" length="144332462" type="application/octet-stream" sparkle:edSignature="4bs72ka+dJjKJXe3i0ICz16jLcXftjEK7B/YLq1IUHu6rvrbI/P/aVY4lUHU8yrPCB5grsEXJisuIy7pdWK0BA=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.7.7-beta/Aside.dmg" length="144402011" type="application/octet-stream" sparkle:edSignature="Oo/IT93e2IXcBsUXUAG3SBAdf7NjSnkcaI0wBFnjGjdAXCuIzyoDaID4PSgYKFiZcme9DCi0qTy4gAh4f6yhCQ=="/>
         </item>
     </channel>
 </rss>
