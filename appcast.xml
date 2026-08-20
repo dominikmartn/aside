@@ -3,10 +3,10 @@
     <channel>
         <title>Aside</title>
         <item>
-            <title>1.7.5</title>
-            <pubDate>Wed, 19 Aug 2026 20:33:04 +0200</pubDate>
+            <title>1.7.6</title>
+            <pubDate>Thu, 20 Aug 2026 12:28:48 +0200</pubDate>
             <sparkle:version>47</sparkle:version>
-            <sparkle:shortVersionString>1.7.5</sparkle:shortVersionString>
+            <sparkle:shortVersionString>1.7.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,32 +31,29 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.7.5 -->
+<!-- notes-for: 1.7.6 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.7.5</h2>
+<h2>Aside 1.7.6</h2>
 
-<p class="intro">Permissions that stay granted, a menu-bar click that actually brings Aside to the front, and a calmer Settings.</p>
-
-<h3>Fixed</h3>
-<ul>
-  <li><b>Clicking the menu-bar icon now brings the library to the front.</b> With "Show Aside in the Dock" off, macOS refused to let Aside activate itself, so the window opened behind whatever you were using. Aside now steps into the Dock for as long as a window is open and steps out again when you close it.</li>
-  <li><b>Keyboard shortcuts in menu-bar mode.</b> Cmd+W, Cmd+Q and Cmd+, work in the library window even without a Dock icon.</li>
-  <li><b>Accessibility permission that would not stick.</b> Granting it while Aside ran was not picked up, and the app could look enabled with nothing listening. Aside now re-checks the real hold-key tap, snaps the switch back with a reason if it fails, and offers a one-click reset when an old entry blocks a new one.</li>
-  <li><b>System audio honesty.</b> "Capturing everyone" only shows once real audio arrives; a recording that stayed silent no longer leaves the permission marked as granted.</li>
-  <li><b>Calendar permission</b> is no longer requested right after you chose "Later", and a grant made in System Settings is picked up without a restart.</li>
-  <li>The Settings sidebar no longer draws a blue focus ring, and the Agents page explains agent phrases in one line.</li>
-</ul>
+<p class="intro">Tag many meetings at once, pick your Copilot provider from a proper menu, and icons you can actually see.</p>
 
 <h3>New</h3>
 <ul>
-  <li><b>Settings icons</b> from the Central icon set, including a classic gear for General.</li>
+  <li><b>Tag several meetings in one step.</b> Select multiple meetings in the library (Cmd- or Shift-click), then tag them all at once — from the right-click menu or the field in the selection pane. Existing tags are suggested as you type.</li>
+  <li><b>Provider menu in Copilot settings.</b> Bringing your own model now picks the provider from a dropdown with full names instead of a cramped row of segments.</li>
+</ul>
+
+<h3>Improved</h3>
+<ul>
+  <li><b>Bolder icons everywhere.</b> Every outline icon moved to a heavier stroke, and the Settings sidebar now uses solid glyphs — small icons stay readable at small sizes.</li>
+  <li><b>Round buttons are one consistent control now</b>, with slightly larger glyphs — the settings lens, copy, share, delete and the transcript player all match.</li>
 </ul>
 </body>
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.7.5/Aside.dmg" length="143104879" type="application/octet-stream" sparkle:edSignature="42BD7Os8xIAAoFUGu9V6GKaJ8LEbz6Fn4pl+mpTz76aHO9PXXLLXxpeY1HyJb0mMpGCVZHI1LMBCnxkeRIk7Cw=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.7.6/Aside.dmg" length="143130386" type="application/octet-stream" sparkle:edSignature="W8TfSgAxe78PkkqEBkD0rqhO457AleZeKN2tmUNLoC7SYdLe4S98xjtEpZZHboCNbeojKbQQZ88LJUisftf9Cw=="/>
         </item>
     </channel>
 </rss>
