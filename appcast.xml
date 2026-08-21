@@ -3,10 +3,10 @@
     <channel>
         <title>Aside</title>
         <item>
-            <title>1.7.7</title>
-            <pubDate>Thu, 20 Aug 2026 20:34:34 +0200</pubDate>
+            <title>1.7.8</title>
+            <pubDate>Fri, 21 Aug 2026 10:53:16 +0200</pubDate>
             <sparkle:version>47</sparkle:version>
-            <sparkle:shortVersionString>1.7.7</sparkle:shortVersionString>
+            <sparkle:shortVersionString>1.7.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,31 +31,29 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.7.7 -->
+<!-- notes-for: 1.7.8 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.7.7</h2>
+<h2>Aside 1.7.8</h2>
 
-<p class="intro">A more resilient microphone path, and for beta testers a dictation that keeps your first words.</p>
+<p class="intro">Subscription keys renew themselves, the trial says where you stand, and beta dictation stops fighting your music.</p>
 
-<h3>Fixed</h3>
+<h3>Improved</h3>
 <ul>
-  <li><b>The 5-minute pre-roll no longer gives up.</b> When the microphone was briefly busy while a call started, the pre-roll buffer silently stayed empty. It now retries until it gets the mic, so starting a recording late still brings the minutes before with it.</li>
-  <li><b>Recording problems tell us why.</b> When the microphone fails mid-recording, Aside now records the exact reason and the state of the audio device — the groundwork for fixing a rare mic dropout some of you have hit.</li>
+  <li><b>Subscription keys renew automatically.</b> The app refreshes your key in the background before it expires — no more digging the renewal out of your email. A "Refresh now" button in Settings &rsaquo; License shows exactly where you stand.</li>
+  <li><b>The trial tells you where you are.</b> The idle panel quietly notes how many free meetings are left, and the last-meeting message is accurate even after it passed.</li>
 </ul>
 
 <h3>Dictation (beta builds)</h3>
 <ul>
-  <li><b>Your first words are no longer lost.</b> With Bluetooth headphones, dictation used to miss the opening words while the headset switched profiles — and your music turned muffled. Dictation now listens through the Mac's built-in microphone: no wait, no muffled music.</li>
-  <li><b>Nothing focused? Nothing lost.</b> Dictating without a text field focused used to vanish the text. It now stays on your clipboard, and the pill says so: press Cmd-V wherever you want it.</li>
-  <li><b>Calmer, livelier speech bars</b> that follow your voice instead of pumping on their own, and a pill that keeps its shape when you release the key.</li>
-  <li><b>Dictation gets its own onboarding step.</b> New installs try dictation right in the welcome flow — cursor in a field, hold the key, speak.</li>
+  <li><b>Your music pauses while you dictate</b> — and comes back when you stop. Aside first checks that something is genuinely playing, so music that was already paused never starts on its own.</li>
+  <li><b>Steady speech bars.</b> A measurement bug made syllables land at random heights; the meter now reads your voice faithfully and moves the way you would expect.</li>
 </ul>
 </body>
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.7.7/Aside.dmg" length="143143482" type="application/octet-stream" sparkle:edSignature="2XozbtQaaN5cGUOxyR03mGisrbi1IbzUmaQjQkAHuQYSJNjE/Zypju7jBEGyoFH8RRD2N5w6PQnBW6TdIibvBg=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.7.8/Aside.dmg" length="143167588" type="application/octet-stream" sparkle:edSignature="huTRqzE5KlzGa6CVgEQQS+9Py0bJYTZmweMaxMhf7tWGrjOBBQ/DVmXoAW7vwazi4amuyA8NuYpin9/U2oLoDg=="/>
         </item>
     </channel>
 </rss>
