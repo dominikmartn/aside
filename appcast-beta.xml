@@ -1,10 +1,10 @@
 <?xml version="1.0" standalone="yes"?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
-        <title>Aside</title>
+        <title>Aside Notes</title>
         <item>
             <title>1.7.10</title>
-            <pubDate>Tue, 25 Aug 2026 10:03:26 +0200</pubDate>
+            <pubDate>Tue, 25 Aug 2026 15:40:37 +0200</pubDate>
             <sparkle:version>49</sparkle:version>
             <sparkle:shortVersionString>1.7.10</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
@@ -48,7 +48,7 @@
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.7.10-beta/Aside.dmg" length="143618557" type="application/octet-stream" sparkle:edSignature="084FxzxeoL2gvsRZJoPQCCdKL6DDfVAcA6Lh7ORurdEsji9IVa7CN2iSd4/hgLZyZuAijMCi9eE5szru0/OaCw=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.7.10-beta/Aside.dmg" length="143618614" type="application/octet-stream" sparkle:edSignature="Iae47u2iSzBf5Vm0gpqDPW4Euq7m8R2lzs+gkaU5v1Ed7IEa6XQ0rZTsi0WPpxF4qC19xOSDmeDxg9RiVpK2Dg=="/>
         </item>
     </channel>
 </rss>
