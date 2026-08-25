@@ -3,10 +3,10 @@
     <channel>
         <title>Aside</title>
         <item>
-            <title>1.7.9</title>
-            <pubDate>Sun, 23 Aug 2026 08:52:57 +0200</pubDate>
-            <sparkle:version>48</sparkle:version>
-            <sparkle:shortVersionString>1.7.9</sparkle:shortVersionString>
+            <title>1.7.10</title>
+            <pubDate>Tue, 25 Aug 2026 10:03:26 +0200</pubDate>
+            <sparkle:version>49</sparkle:version>
+            <sparkle:shortVersionString>1.7.10</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,36 +31,24 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.7.9 -->
+<!-- notes-for: 1.7.10 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.7.9</h2>
+<h2>Aside 1.7.10</h2>
 
-<p class="intro">Meeting notes are a full protocol now, speakers carry their real names, and the transcript starts where your call starts.</p>
+<p class="intro">Dictation got more comfortable: a better default key, a hands-free shortcut, and pasting that works in more apps.</p>
 
-<h3>Notes</h3>
+<h3>Dictation</h3>
 <ul>
-  <li><b>A protocol instead of a telegram.</b> Every note now has topics, a chronological details section with transcript timestamps, decisions, and action items with an owner and one line of context.</li>
-  <li><b>Your name instead of "You".</b> Aside takes it from your calendar or your Mac account; set it yourself under Settings &rsaquo; Notes if you prefer.</li>
-  <li><b>Rename speakers with one click.</b> Click a speaker label in the transcript to give it a name; the name survives a regenerate.</li>
-  <li><b>Ask about this meeting answers from the note you have open</b>, not from the last transcript the panel still held.</li>
-</ul>
-
-<h3>Recording</h3>
-<ul>
-  <li><b>No more silent first five minutes.</b> When the pre-roll buffer only heard your own microphone, it is dropped instead of being stitched in as silence.</li>
-  <li><b>Better speaker separation</b> on calls with several remote voices.</li>
-</ul>
-
-<h3>Team sync</h3>
-<ul>
-  <li><b>Conflicts keep both versions.</b> When two people edit the same shared note, nothing is overwritten; the conflicting copy waits for you to merge it.</li>
+  <li><b>The default key is now Left &#8963;.</b> If you never picked your own key, your dictation key changed from Right &#8984; to Left Control. Pick a different one any time under Settings &rsaquo; Dictation.</li>
+  <li><b>Tap Space while holding to go hands-free.</b> Same effect as the double-tap: the mic stays open after you let go, until you confirm or cancel.</li>
+  <li><b>Dictating into more apps just works.</b> Fields that Aside could not identify as text before &mdash; some web inputs and chat composers &mdash; now get the text pasted anyway, and it stays on the clipboard as a backup instead of asking you to copy it yourself.</li>
 </ul>
 </body>
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.7.9-beta/Aside.dmg" length="144559717" type="application/octet-stream" sparkle:edSignature="kKZbHtpRa/4qfgypONLLpkkvKfW+w5pLVaWEGJWgI4lOf16UN6nfMVBFplwzw5FiFCE6natM65WOyKBmp03aAw=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.7.10-beta/Aside.dmg" length="143618557" type="application/octet-stream" sparkle:edSignature="084FxzxeoL2gvsRZJoPQCCdKL6DDfVAcA6Lh7ORurdEsji9IVa7CN2iSd4/hgLZyZuAijMCi9eE5szru0/OaCw=="/>
         </item>
     </channel>
 </rss>
