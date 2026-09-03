@@ -3,10 +3,10 @@
     <channel>
         <title>Aside Notes</title>
         <item>
-            <title>1.7.12</title>
-            <pubDate>Mon, 31 Aug 2026 07:31:29 +0200</pubDate>
-            <sparkle:version>51</sparkle:version>
-            <sparkle:shortVersionString>1.7.12</sparkle:shortVersionString>
+            <title>1.7.13</title>
+            <pubDate>Thu, 03 Sep 2026 11:30:48 +0200</pubDate>
+            <sparkle:version>52</sparkle:version>
+            <sparkle:shortVersionString>1.7.13</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,22 +31,35 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.7.12 -->
+<!-- notes-for: 1.7.13 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.7.12</h2>
+<h2>Aside 1.7.13</h2>
 
-<p class="intro">Aside gets out of the way of the other app called Aside.</p>
+<p class="intro">The notch opens like glass, the floating pill morphs into the card, and the transcript keeps up with the conversation.</p>
 
-<h3>Naming</h3>
+<h3>Notch and panel</h3>
 <ul>
-  <li><b>Fixes a naming conflict with another app called Aside.</b> The app now installs and renames itself as Aside Notes, so the two no longer fight over the same name in your Applications folder. Nothing else changes: same app, same settings, same notes.</li>
+  <li><b>Glass material.</b> The notch expands with a real glass look instead of a flat black block, and the open and close animation runs smoothly without a hard border around the card.</li>
+  <li><b>Floating mode morphs.</b> On Macs without a notch, the pill morphs into the card and back, staying where it is instead of popping.</li>
+  <li><b>Transcript follows the last sentence.</b> The live transcript scrolls with the conversation, so the newest line is always in view. The consent hint shows once at the start and then gets out of the way.</li>
+</ul>
+
+<h3>Audio</h3>
+<ul>
+  <li><b>Switching input devices no longer drops the mic.</b> Plugging in or removing a headset mid-call keeps the recording going.</li>
+</ul>
+
+<h3>Settings</h3>
+<ul>
+  <li>The "Your name" field shows the detected name as a placeholder again instead of as a broken label.</li>
+  <li>Shorter explanation under "Buffer the last 5 minutes during calls", and the settings sidebar drops the redundant "Aside" heading.</li>
 </ul>
 </body>
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.7.12-beta/Aside.dmg" length="143759944" type="application/octet-stream" sparkle:edSignature="8djVYI428+hoQZko14F2+I6ts/d/VjSjiPku4gLAkSipAs70JWBKzoGmjMOnU6osdudu0vQfZCkz4KU1Xo9BBA=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v1.7.13-beta/Aside.dmg" length="144294361" type="application/octet-stream" sparkle:edSignature="8GoUEtHxZF4Z2/0Iojo7BUMorxFNiLoIfkXjtbbufGJvHd3aytD/mm5PGkCww/jb53Nm0KR8/PSh9EyJShOoAw=="/>
         </item>
     </channel>
 </rss>
