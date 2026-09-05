@@ -20,29 +20,32 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.7.13 -->
+<!-- notes-for: 1.7.14 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.7.13</h2>
-
-<p class="intro">The notch opens like glass, the floating pill morphs into the card, and the transcript keeps up with the conversation.</p>
-
-<h3>Notch and panel</h3>
-<ul>
-  <li><b>Glass material.</b> The notch expands with a real glass look instead of a flat black block, and the open and close animation runs smoothly without a hard border around the card.</li>
-  <li><b>Floating mode morphs.</b> On Macs without a notch, the pill morphs into the card and back, staying where it is instead of popping.</li>
-  <li><b>Transcript follows the last sentence.</b> The live transcript scrolls with the conversation, so the newest line is always in view. The consent hint shows once at the start and then gets out of the way.</li>
-</ul>
-
+<h2>Aside 1.7.14</h2>
+<p class="intro">A small update with fixes for the microphone, the live transcript and dictation.</p>
 <h3>Audio</h3>
 <ul>
-  <li><b>Switching input devices no longer drops the mic.</b> Plugging in or removing a headset mid-call keeps the recording going.</li>
+  <li><b>The mic follows your headset.</b> Taking AirPods off and putting them back on within a moment no longer leaves the rest of the meeting without your voice. Aside now checks the device it landed on after every switch and keeps retrying until audio returns.</li>
 </ul>
-
-<h3>Settings</h3>
+<h3>Live transcript</h3>
 <ul>
-  <li>The "Your name" field shows the detected name as a placeholder again instead of as a broken label.</li>
-  <li>Shorter explanation under "Buffer the last 5 minutes during calls", and the settings sidebar drops the redundant "Aside" heading.</li>
+  <li>The transcript no longer flickers while it fills up, and the scroll bar stays out of the way.</li>
+  <li>Language detection now works from what it hears while you are still speaking, so short meetings no longer stay stuck in tiny transcription windows.</li>
+  <li>Tooltips appear where they belong instead of flying in.</li>
+</ul>
+<h3>Dictation</h3>
+<ul>
+  <li>Pressing the dictation key during a meeting now tells you why nothing happens.</li>
+  <li>A mic that hangs on start no longer blocks every later press.</li>
+  <li>A dictation that came back empty gets one more pass, and a lost dictation keeps its audio.</li>
+</ul>
+<h3>Notes and settings</h3>
+<ul>
+  <li>Rewriting a note from the library keeps the attendee names the first note had.</li>
+  <li>The checkout quotes prices in the currency you will be charged in.</li>
+  <li>Settings says where your data goes, in the same words as the website.</li>
 </ul>
 </body>
 </html>
