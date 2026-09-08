@@ -20,32 +20,35 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.7.15 -->
+<!-- notes-for: 1.8.0 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.7.15</h2>
-<p class="intro">A small update with fixes for the microphone, the live transcript and dictation.</p>
-<h3>Audio</h3>
+<h2>Aside 1.8.0</h2>
+<p class="intro">rebuilt the settings, added a little license card and fixed a bunch of small things in the library and the notes.</p>
+<h3>settings</h3>
 <ul>
-  <li><b>The mic follows your headset.</b> Taking AirPods off and putting them back on within a moment no longer leaves the rest of the meeting without your voice. Aside now checks the device it landed on after every switch and keeps retrying until audio returns.</li>
+  <li>settings are flat pages now instead of panels inside panels, and every control sits on the same kind of row.</li>
+  <li>there is a notes tab now, with your name and the vault folder in one place.</li>
+  <li>your license shows up as a card in the license tab.</li>
 </ul>
-<h3>Live transcript</h3>
+<h3>library and notes</h3>
 <ul>
-  <li>The transcript no longer flickers while it fills up, and the scroll bar stays out of the way.</li>
-  <li>Language detection now works from what it hears while you are still speaking, so short meetings no longer stay stuck in tiny transcription windows.</li>
-  <li>Tooltips appear where they belong instead of flying in.</li>
+  <li>deleting from the bottom bar asks the same way the row menu does, and the trash lid closes once you confirm.</li>
+  <li>the note editor no longer draws its text cursor over the library's action bar.</li>
+  <li>lists get one hover that slides along instead of lighting up every row, and round icon buttons always show the arrow pointer.</li>
+  <li>if a summary gets retried, the title gets redone too.</li>
+  <li>the detail page fades in and out, and the transcript player floats above the note now.</li>
+  <li>a few visual fixes in the library: inset rows have their own floor, the banner floor is a material, the editor's edge fade is a proper mask.</li>
 </ul>
-<h3>Dictation</h3>
+<h3>transcript and chat</h3>
 <ul>
-  <li>Pressing the dictation key during a meeting now tells you why nothing happens.</li>
-  <li>A mic that hangs on start no longer blocks every later press.</li>
-  <li>A dictation that came back empty gets one more pass, and a lost dictation keeps its audio.</li>
+  <li>the transcript keeps following while it grows, and the live caption stops changing under you while you read.</li>
+  <li>your chat bubble hugs the text instead of going full width, and images in live notes fit the picture, not the row.</li>
 </ul>
-<h3>Notes and settings</h3>
+<h3>under the hood</h3>
 <ul>
-  <li>Rewriting a note from the library keeps the attendee names the first note had.</li>
-  <li>The checkout quotes prices in the currency you will be charged in.</li>
-  <li>Settings says where your data goes, in the same words as the website.</li>
+  <li>speaker recognition builds on intel macs again.</li>
+  <li>every provider gets the same chat system prompt, so wording can't drift between them.</li>
 </ul>
 </body>
 </html>
