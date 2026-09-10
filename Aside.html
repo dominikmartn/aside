@@ -20,15 +20,51 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.8.1 -->
+<!-- notes-for: 1.8.2 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.8.1</h2>
-<p class="intro">a small fix release for aside cloud.</p>
-<h3>aside cloud</h3>
+<h2>Aside 1.8.2</h2>
+<p class="intro">a bugfix release, mostly about notes that went missing and a few things around recording, teams and licenses.</p>
+<h3>recording and dictation</h3>
 <ul>
-  <li>if the cloud had forgotten your mac, notes silently stopped after about a month and only quitting and reopening helped. aside now registers itself again on its own.</li>
-  <li>longer license keys were turned away by the relay. they work now.</li>
+  <li>the recording pill and its card no longer vanish mid meeting if you close and reopen the card in the same moment.</li>
+  <li>if the recording stops on its own, the note says so above the summary instead of looking complete.</li>
+  <li>a meeting that failed to save keeps its retry button, even when the next recording has already started.</li>
+  <li>a dictation you left running is finished and pasted before a meeting recording starts, so it can no longer paste the meeting into your next app.</li>
+  <li>a dictation you cancelled no longer runs into the next one and turns it into garbage.</li>
+  <li>someone who talks for a long time without pausing gets a proper voice print, and one failed print no longer drops the speech queued behind it.</li>
+</ul>
+<h3>notes and sync</h3>
+<ul>
+  <li>a note whose share never made it out of the app is picked up again on the next sweep instead of staying missing on your phone.</li>
+  <li>a note aside could not read for a moment is no longer deleted from the server and your phone. it has to really be gone from the vault.</li>
+  <li>duplicating a note in finder gives the copy its own sync id, so it actually reaches your phone.</li>
+  <li>a shared note that failed to download or failed to write is fetched again on the next sync instead of being lost for good.</li>
+  <li>if a teammate deletes a note you edited, your version is kept beside it as a conflicted copy.</li>
+  <li>links in a note that would open another app now show the real target and ask first. web links, addresses and files work as before.</li>
+  <li>connecting your iphone no longer hands the pairing secret to anything else on the same network. a device that finds you that way waits for your ok.</li>
+  <li>names from a calendar invite are handed to the model as names, not as part of the instructions, and only meetings you organised teach aside how you spell your own name.</li>
+</ul>
+<h3>teams</h3>
+<ul>
+  <li>joining a team stops with a clear message if the old personal sync marker cannot be cleared, instead of publishing your whole vault to the team.</li>
+  <li>the recovery kit is the only thing that can restore a team now, not the team key every member holds. existing teams need a new kit for that route, and settings says so.</li>
+  <li>after an emergency recovery the team is told, with the date, so nobody misses that the old sheet still opens the team.</li>
+  <li>the recovery kit row only offers its button to admins, because only an admin may retire a kit.</li>
+  <li>the recovery kit pdf is saved so only your own account on the mac can read it.</li>
+</ul>
+<h3>license and aside cloud</h3>
+<ul>
+  <li>when your subscription renews, aside cloud comes back on by itself instead of leaving you on a fallback you never picked.</li>
+  <li>activating an older key from an earlier mail can no longer shorten a term you already paid for.</li>
+  <li>on a busy day a subscriber gets a message about the daily cap instead of being told to add their own api key.</li>
+  <li>a transcript that is too big is turned away without costing one of your free calls.</li>
+</ul>
+<h3>under the hood</h3>
+<ul>
+  <li>recovery challenges are cleaned up and capped, so nobody can grow the server database by asking for them.</li>
+  <li>if agent access cannot open its port, the reason stands in settings under the switch instead of the switch just claiming to be on.</li>
+  <li>the api spec matches what the recovery route actually does.</li>
 </ul>
 </body>
 </html>
