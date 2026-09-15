@@ -20,51 +20,53 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 1.8.2 -->
+<!-- notes-for: 2.0.0 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 1.8.2</h2>
-<p class="intro">a bugfix release, mostly about notes that went missing and a few things around recording, teams and licenses.</p>
-<h3>recording and dictation</h3>
+<h2>Aside 2.0.0</h2>
+<p class="intro">dictation across your mac, live speaker labels, new note styles and a revised upgrade flow, plus fixes for recording, notes and licenses.</p>
+<h3>dictation</h3>
 <ul>
-  <li>the recording pill and its card no longer vanish mid meeting if you close and reopen the card in the same moment.</li>
-  <li>if the recording stops on its own, the note says so above the summary instead of looking complete.</li>
-  <li>a meeting that failed to save keeps its retry button, even when the next recording has already started.</li>
-  <li>a dictation you left running is finished and pasted before a meeting recording starts, so it can no longer paste the meeting into your next app.</li>
-  <li>a dictation you cancelled no longer runs into the next one and turns it into garbage.</li>
-  <li>someone who talks for a long time without pausing gets a proper voice print, and one failed print no longer drops the speech queued behind it.</li>
+  <li>hold fn anywhere, speak, and release to insert the text at your cursor.</li>
+  <li>double-tap fn for hands-free dictation, then use the pill to finish or discard.</li>
 </ul>
-<h3>notes and sync</h3>
+<h3>notes and interface</h3>
 <ul>
-  <li>a note whose share never made it out of the app is picked up again on the next sweep instead of staying missing on your phone.</li>
-  <li>a note aside could not read for a moment is no longer deleted from the server and your phone. it has to really be gone from the vault.</li>
-  <li>duplicating a note in finder gives the copy its own sync id, so it actually reaches your phone.</li>
-  <li>a shared note that failed to download or failed to write is fetched again on the next sync instead of being lost for good.</li>
-  <li>if a teammate deletes a note you edited, your version is kept beside it as a conflicted copy.</li>
-  <li>links in a note that would open another app now show the real target and ask first. web links, addresses and files work as before.</li>
-  <li>connecting your iphone no longer hands the pairing secret to anything else on the same network. a device that finds you that way waits for your ok.</li>
-  <li>names from a calendar invite are handed to the model as names, not as part of the instructions, and only meetings you organised teach aside how you spell your own name.</li>
+  <li>the live transcript labels your speech as “you” and the other side as “others”.</li>
+  <li>choose brief, minutes, client call or interview, add instructions for every note, or rewrite one note in another style, with brief as the new default.</li>
+  <li>settings has a dedicated notes tab, and the library has an inset reading card, a floating transcript player and a new empty state before your first meeting.</li>
+  <li>text buttons are pill-shaped, start recording and upgrade use liquid glass, and action icons animate on hover.</li>
 </ul>
-<h3>teams</h3>
+<h3>trial and activation</h3>
 <ul>
-  <li>joining a team stops with a clear message if the old personal sync marker cannot be cleared, instead of publishing your whole vault to the team.</li>
-  <li>the recovery kit is the only thing that can restore a team now, not the team key every member holds. existing teams need a new kit for that route, and settings says so.</li>
-  <li>after an emergency recovery the team is told, with the date, so nobody misses that the old sheet still opens the team.</li>
-  <li>the recovery kit row only offers its button to admins, because only an admin may retire a kit.</li>
-  <li>the recovery kit pdf is saved so only your own account on the mac can read it.</li>
+  <li>the license tab shows your remaining allowance of 10 free meetings and seven days of dictation, with the dictation week starting when you finish setup.</li>
+  <li>aside cloud is now aside ai, and the upgrade window explains what ran out, shows plans in your checkout currency and explains the local model or api key needed for a one-time license.</li>
+  <li>the activation link in your license email opens aside and activates your key without copying and pasting.</li>
 </ul>
-<h3>license and aside cloud</h3>
+<h3>recording and dictation fixes</h3>
 <ul>
-  <li>when your subscription renews, aside cloud comes back on by itself instead of leaving you on a fallback you never picked.</li>
-  <li>activating an older key from an earlier mail can no longer shorten a term you already paid for.</li>
-  <li>on a busy day a subscriber gets a message about the daily cap instead of being told to add their own api key.</li>
-  <li>a transcript that is too big is turned away without costing one of your free calls.</li>
+  <li>a cancelled or stuck dictation no longer blocks or corrupts the next one, and an unfinished dictation is completed before a meeting starts.</li>
+  <li>dictation finishes at five minutes without losing the beginning, and a hands-free silence timeout keeps recognized text available to copy.</li>
+  <li>dictation handles loud input more reliably, retries an empty transcription, keeps audio when no usable text comes back and preserves the german word “um”.</li>
+  <li>meeting recording follows microphone changes and keeps trying to recover when airpods disconnect and reconnect.</li>
+  <li>the recording pill and card no longer disappear during a quick close and reopen, and a recording that stops early leaves a warning in its note.</li>
+  <li>a meeting that failed to save keeps its error and retry button even after the next recording starts.</li>
 </ul>
-<h3>under the hood</h3>
+<h3>notes and calendar fixes</h3>
 <ul>
-  <li>recovery challenges are cleaned up and capped, so nobody can grow the server database by asking for them.</li>
-  <li>if agent access cannot open its port, the reason stands in settings under the switch instead of the switch just claiming to be on.</li>
-  <li>the api spec matches what the recovery route actually does.</li>
+  <li>the live transcript no longer blinks or loses automatic scrolling as it grows, and saved speaker detection no longer limits the number of voices to the calendar invite.</li>
+  <li>retrying a summary replaces its placeholder title and uses the attendee names saved with the note.</li>
+  <li>calendar checks no longer freeze the interface or trigger a permission request in the background.</li>
+  <li>calendar names are treated as names rather than instructions, and only meetings you organised can teach aside how to spell your own name.</li>
+  <li>note links that launch another app show their real target and ask first, while web links, email addresses and files work as before.</li>
+</ul>
+<h3>other fixes</h3>
+<ul>
+  <li>notes scroll clear of floating controls after switching meetings, image frames and chat bubbles fit their contents, and library delete actions use the same confirmation.</li>
+  <li>tooltips stay put, button labels stay sharp, hover icons no longer clip, action buttons keep the arrow pointer, the dictation pill drags on macos 27 and the notch panel closes without flashing.</li>
+  <li>renewed subscriptions restore aside ai automatically, older keys cannot shorten a paid term, long valid keys are accepted and a forgotten installation reconnects automatically.</li>
+  <li>subscribers get a daily-limit message instead of being asked for an api key, and an oversized transcript no longer consumes a free request.</li>
+  <li>settings shows why agent access could not start and offers a retry when an agent connection fails.</li>
 </ul>
 </body>
 </html>
