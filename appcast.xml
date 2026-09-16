@@ -3,10 +3,10 @@
     <channel>
         <title>Aside</title>
         <item>
-            <title>2.0.0</title>
-            <pubDate>Tue, 15 Sep 2026 15:03:16 +0200</pubDate>
-            <sparkle:version>60</sparkle:version>
-            <sparkle:shortVersionString>2.0.0</sparkle:shortVersionString>
+            <title>2.0.1</title>
+            <pubDate>Wed, 16 Sep 2026 07:50:13 +0200</pubDate>
+            <sparkle:version>61</sparkle:version>
+            <sparkle:shortVersionString>2.0.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,59 +31,41 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.0.0 -->
+<!-- notes-for: 2.0.1 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 2.0.0</h2>
-<p class="intro">dictation across your mac, live speaker labels, new note styles and a revised upgrade flow, plus fixes for recording, notes and licenses.</p>
+<h2>Aside 2.0.1</h2>
+<p class="intro">fixes after the 2.0.0 launch: the first run, dictation on more microphones, and a trial count that holds.</p>
+<h3>first run</h3>
+<ul>
+  <li>your mac stays usable while the setup runs. the menu bar, force quit and your other apps all stay reachable.</li>
+  <li>checking for updates during the setup no longer freezes aside.</li>
+  <li>the setup opens on the display you are working on, and the panel clears the notch afterwards.</li>
+  <li>the dictation step has a way on when the speech model will not load, and esc no longer skips the setup.</li>
+  <li>a link you click before the setup is finished waits for it instead of opening a window behind it.</li>
+</ul>
 <h3>dictation</h3>
 <ul>
-  <li>hold fn anywhere, speak, and release to insert the text at your cursor.</li>
-  <li>double-tap fn for hands-free dictation, then use the pill to finish or discard.</li>
+  <li>a microphone on the second input channel is heard, and aside follows the loudest input instead of summing all of them.</li>
+  <li>a take with no speech in it is dropped instead of inserting words nobody said.</li>
+  <li>aside keeps waiting for a slow speech model instead of blaming the download, and esc reaches an input method that is still composing.</li>
+  <li>changing the microphone while a recording starts no longer quits aside.</li>
 </ul>
-<h3>notes and interface</h3>
+<h3>trial and licence</h3>
 <ul>
-  <li>the live transcript labels your speech as “you” and the other side as “others”.</li>
-  <li>choose brief, minutes, client call or interview, add instructions for every note, or rewrite one note in another style, with brief as the new default.</li>
-  <li>settings has a dedicated notes tab, and the library has an inset reading card, a floating transcript player and a new empty state before your first meeting.</li>
-  <li>text buttons are pill-shaped, start recording and upgrade use liquid glass, and action icons animate on hover.</li>
+  <li>the free meetings you have used survive a reinstall, and a failed write never hands them back.</li>
+  <li>an address that cannot receive a licence is refused straight away, with the reason.</li>
 </ul>
-<h3>trial and activation</h3>
+<h3>notes</h3>
 <ul>
-  <li>the license tab shows your remaining allowance of 10 free meetings and seven days of dictation, with the dictation week starting when you finish setup.</li>
-  <li>aside cloud is now aside ai, and the upgrade window explains what ran out, shows plans in your checkout currency and explains the local model or api key needed for a one-time license.</li>
-  <li>the activation link in your license email opens aside and activates your key without copying and pasting.</li>
-</ul>
-<h3>recording and dictation fixes</h3>
-<ul>
-  <li>a cancelled or stuck dictation no longer blocks or corrupts the next one, and an unfinished dictation is completed before a meeting starts.</li>
-  <li>dictation finishes at five minutes without losing the beginning, and a hands-free silence timeout keeps recognized text available to copy.</li>
-  <li>dictation handles loud input more reliably, retries an empty transcription, keeps audio when no usable text comes back and preserves the german word “um”.</li>
-  <li>meeting recording follows microphone changes and keeps trying to recover when airpods disconnect and reconnect.</li>
-  <li>the recording pill and card no longer disappear during a quick close and reopen, and a recording that stops early leaves a warning in its note.</li>
-  <li>a meeting that failed to save keeps its error and retry button even after the next recording starts.</li>
-</ul>
-<h3>notes and calendar fixes</h3>
-<ul>
-  <li>the live transcript no longer blinks or loses automatic scrolling as it grows, and saved speaker detection no longer limits the number of voices to the calendar invite.</li>
-  <li>retrying a summary replaces its placeholder title and uses the attendee names saved with the note.</li>
-  <li>calendar checks no longer freeze the interface or trigger a permission request in the background.</li>
-  <li>calendar names are treated as names rather than instructions, and only meetings you organised can teach aside how to spell your own name.</li>
-  <li>note links that launch another app show their real target and ask first, while web links, email addresses and files work as before.</li>
-</ul>
-<h3>other fixes</h3>
-<ul>
-  <li>notes scroll clear of floating controls after switching meetings, image frames and chat bubbles fit their contents, and library delete actions use the same confirmation.</li>
-  <li>tooltips stay put, button labels stay sharp, hover icons no longer clip, action buttons keep the arrow pointer, the dictation pill drags on macos 27 and the notch panel closes without flashing.</li>
-  <li>renewed subscriptions restore aside ai automatically, older keys cannot shorten a paid term, long valid keys are accepted and a forgotten installation reconnects automatically.</li>
-  <li>subscribers get a daily-limit message instead of being asked for an api key, and an oversized transcript no longer consumes a free request.</li>
-  <li>settings shows why agent access could not start and offers a retry when an agent connection fails.</li>
+  <li>a summary that failed keeps its retry across meetings, and a short meeting is no longer reported as a failed ai call.</li>
+  <li>aside asks before sending crash reports, and says that hangs and unclean exits go with them.</li>
 </ul>
 </body>
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.0.0/Aside-Update.zip" length="146910893" type="application/octet-stream" sparkle:edSignature="eR+M6oaVq/3EnKsFjTf5/xnTHp81rxQYVIfaM/8fISaPQjI5sHmzjaFd/Hzi06Ag489X9AfFfNMhzARNmz35Bw=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.0.1/Aside-Update.zip" length="147048454" type="application/octet-stream" sparkle:edSignature="r5TYfVE244vakvkBjn4RwJ3XjdX9X8iEMjDhpy184pGDVjo/gyctT68GYSg+EulpU/j2gOavtxKzctVMwN7jDw=="/>
         </item>
     </channel>
 </rss>
