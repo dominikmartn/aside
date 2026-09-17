@@ -20,35 +20,25 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.0.1 -->
+<!-- notes-for: 2.0.2 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 2.0.1</h2>
-<p class="intro">fixes after the 2.0.0 launch: the first run, dictation on more microphones, and a trial count that holds.</p>
-<h3>first run</h3>
+<h2>Aside 2.0.2</h2>
+<p class="intro">fixes for notes that saved without a summary, and for dictations that came back half written.</p>
+<h3>notes</h3>
 <ul>
-  <li>your mac stays usable while the setup runs. the menu bar, force quit and your other apps all stay reachable.</li>
-  <li>checking for updates during the setup no longer freezes aside.</li>
-  <li>the setup opens on the display you are working on, and the panel clears the notch afterwards.</li>
-  <li>the dictation step has a way on when the speech model will not load, and esc no longer skips the setup.</li>
-  <li>a link you click before the setup is finished waits for it instead of opening a window behind it.</li>
+  <li>a meeting whose note came out blank now contains the summary aside wrote for it.</li>
+  <li>a short meeting gets the same sections as a long one, so a quick call no longer comes back as loose text.</li>
+  <li>a note no longer takes a whole paragraph as its title and its filename.</li>
 </ul>
 <h3>dictation</h3>
 <ul>
-  <li>a microphone on the second input channel is heard, and aside follows the loudest input instead of summing all of them.</li>
-  <li>a take with no speech in it is dropped instead of inserting words nobody said.</li>
-  <li>aside keeps waiting for a slow speech model instead of blaming the download, and esc reaches an input method that is still composing.</li>
-  <li>changing the microphone while a recording starts no longer quits aside.</li>
+  <li>a long dictation keeps every word: a stretch that came back empty is now recognised again instead of quietly dropped.</li>
+  <li>a loud knock no longer turns the rest of a take quiet, so the speech after it is still heard.</li>
 </ul>
-<h3>trial and licence</h3>
+<h3>window</h3>
 <ul>
-  <li>the free meetings you have used survive a reinstall, and a failed write never hands them back.</li>
-  <li>an address that cannot receive a licence is refused straight away, with the reason.</li>
-</ul>
-<h3>notes</h3>
-<ul>
-  <li>a summary that failed keeps its retry across meetings, and a short meeting is no longer reported as a failed ai call.</li>
-  <li>aside asks before sending crash reports, and says that hangs and unclean exits go with them.</li>
+  <li>the reading card's corner now follows the window's own curve, so the gap around it stays even.</li>
 </ul>
 </body>
 </html>
