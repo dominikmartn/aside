@@ -20,25 +20,63 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.0.2 -->
+<!-- notes-for: 2.0.3 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 2.0.2</h2>
-<p class="intro">fixes for notes that saved without a summary, and for dictations that came back half written.</p>
+<h2>Aside 2.0.3</h2>
+<p class="intro">a round of fixes for recording, notes, dictation and aside cloud, found in a code review of the whole app.</p>
+<h3>recording</h3>
+<ul>
+  <li>stopping right after you pressed record now really stops: the microphone no longer stays open when the stop landed while the mic was still starting.</li>
+  <li>a recording that starts after your call audio broke no longer begins with a piece of the previous call.</li>
+  <li>a meeting you paused right after starting is offered for recovery again instead of being cleaned away.</li>
+  <li>with airpods or another bluetooth headset connected, aside no longer tries the microphone over and over before a meeting; that retrying used to switch the headset into its low-quality call mode and make it crackle.</li>
+</ul>
+<h3>transcript</h3>
+<ul>
+  <li>the live transcript no longer loses half a sentence each time it rolls to a new window, and never says a sentence twice.</li>
+  <li>"no, no, no, don't cancel" stays in the transcript; the filter for stuck repetitions now only removes real loops.</li>
+  <li>in a meeting recorded through one microphone with several people in the room, nobody is guessed to be "you" any more.</li>
+  <li>a one-word answer of yours between the other side's words stays yours when there was a pause around it.</li>
+  <li>a recovered meeting is read in its own language, not the previous meeting's.</li>
+  <li>the sharper speech model is picked up when the current meeting ends, not only after a restart.</li>
+  <li>an identifier like customer_id_status in a note stays exactly as written; underscores only mean italics at word edges.</li>
+</ul>
 <h3>notes</h3>
 <ul>
-  <li>a meeting whose note came out blank now contains the summary aside wrote for it.</li>
-  <li>a short meeting gets the same sections as a long one, so a quick call no longer comes back as loose text.</li>
-  <li>a note no longer takes a whole paragraph as its title and its filename.</li>
+  <li>the notes you typed under "your notes" survive when the summary is written again.</li>
+  <li>a title you renamed while the summary was still on its way stays renamed.</li>
+  <li>a summary that arrives late shows up in the library without reopening the note.</li>
+  <li>the library follows a new notes folder the moment you pick it.</li>
+  <li>a meeting without speaker labels now shows its transcript, and "try again" works for it.</li>
+  <li>recordings that belong to another notes folder are no longer cleaned away after you switch folders.</li>
+  <li>a note with an umlaut in its name is committed like any other.</li>
+  <li>a short description you rewrote while the summary was still on its way stays yours.</li>
+  <li>a question you ask in the library after a meeting is answered from your notes, not from the meeting that just ended.</li>
 </ul>
 <h3>dictation</h3>
 <ul>
-  <li>a long dictation keeps every word: a stretch that came back empty is now recognised again instead of quietly dropped.</li>
-  <li>a loud knock no longer turns the rest of a take quiet, so the speech after it is still heard.</li>
+  <li>the free week starts when you finish the setup, not when you open the settings.</li>
+  <li>a take that was still being written when the mac went to sleep is no longer typed into whatever is in front when it wakes.</li>
+  <li>letting go of the key and pressing it again right away starts a new take instead of discarding it.</li>
+  <li>a hands-free take you walked away from keeps its words for you to copy.</li>
+  <li>the setup says so when the dictation key could not be armed, instead of calling itself done.</li>
 </ul>
-<h3>window</h3>
+<h3>aside cloud</h3>
 <ul>
-  <li>the reading card's corner now follows the window's own curve, so the gap around it stays even.</li>
+  <li>a summary that broke off halfway is no longer saved as if it were complete; the note keeps "try again".</li>
+  <li>when your keychain refuses to store the access, aside says so instead of running into a rate limit.</li>
+  <li>a meeting counted during a keychain hiccup is not counted a second time on the next launch.</li>
+  <li>with your own api key, an answer that broke off halfway is no longer saved as complete.</li>
+</ul>
+<h3>settings</h3>
+<ul>
+  <li>picking a notes folder inside documents, desktop or icloud drive now warns you first: those folders are synced, and the sync can truncate a note while aside is still writing it.</li>
+</ul>
+<h3>agents</h3>
+<ul>
+  <li>the vault search no longer follows links that point outside your notes folder.</li>
+  <li>an agent that hung up no longer keeps its slot until the timeout.</li>
 </ul>
 </body>
 </html>
