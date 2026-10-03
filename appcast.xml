@@ -3,10 +3,10 @@
     <channel>
         <title>Aside</title>
         <item>
-            <title>2.0.4</title>
-            <pubDate>Tue, 29 Sep 2026 07:27:30 +0200</pubDate>
-            <sparkle:version>78</sparkle:version>
-            <sparkle:shortVersionString>2.0.4</sparkle:shortVersionString>
+            <title>2.0.5</title>
+            <pubDate>Sat, 03 Oct 2026 11:28:01 +0200</pubDate>
+            <sparkle:version>79</sparkle:version>
+            <sparkle:shortVersionString>2.0.5</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,47 +31,20 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.0.4 -->
+<!-- notes-for: 2.0.5 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 2.0.4</h2>
-<p class="intro">added a microphone picker, a feedback form and automatic deletion of old recordings, and made recording hold up when the mic misbehaves or nobody is talking.</p>
-<h3>new</h3>
+<h2>Aside 2.0.5</h2>
+<p class="intro">a small fix for the first start after installing.</p>
+<h3>first start</h3>
 <ul>
-  <li>pick a microphone for meetings in settings › calls and a separate one for dictation in settings › dictation. if the one you picked is unplugged, aside uses the system default until it's back.</li>
-  <li>dictation can use apple's on-device speech recognition for english: pick it under settings › dictation › speech recognition. automatic stays on whisper.</li>
-  <li>send feedback straight from the app: "send feedback" at the bottom of the settings sidebar.</li>
-  <li>delete recordings automatically after 7, 30 or 90 days in settings › privacy. only the audio goes, your notes and transcripts stay. off unless you turn it on.</li>
-</ul>
-<h3>recording</h3>
-<ul>
-  <li>when the microphone stops responding, stop still finishes within seconds and the note keeps what was recorded.</li>
-  <li>a microphone that changes in the middle of a meeting no longer stops the whole recording.</li>
-  <li>the call buffer stops retrying a microphone that won't open, instead of trying again all call long and keeping airpods in phone mode.</li>
-</ul>
-<h3>transcript</h3>
-<ul>
-  <li>waiting alone in a silent call no longer fills the live transcript with "thank you."</li>
-  <li>the first seconds of the live transcript are in the language you speak, not in english.</li>
-</ul>
-<h3>notes</h3>
-<ul>
-  <li>a recording with only a few words says "too short to summarize" and keeps its transcript, instead of getting a made-up summary.</li>
-  <li>a meeting you share as a file now looks like an aside page.</li>
-</ul>
-<h3>aside ai</h3>
-<ul>
-  <li>in a country aside ai can't serve, aside now says so and points you to your own api key or ollama, instead of calling your key broken.</li>
-</ul>
-<h3>settings</h3>
-<ul>
-  <li>a notes folder that is gone for good can be forgotten in settings › vault, so the recordings that only belonged to it get cleaned up.</li>
+  <li>the window has its sidebar right after onboarding, with settings at the bottom left and the record button next to it. before, a new install showed a single card without the settings button until the first meeting.</li>
 </ul>
 </body>
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.0.4/Aside-Update.zip" length="147323097" type="application/octet-stream" sparkle:edSignature="fHkYPaC2oS14Fn0rVrqS4KgVGNmKy208XmjXNAuPBbL7VP3zGmZBzgCfT8CSo4ADb6ZkJFfIuh4abOR4I+hnAg=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.0.5/Aside-Update.zip" length="147309858" type="application/octet-stream" sparkle:edSignature="bBRAxa6VtXR6HJYIK1M3e2RQV2shaBQj2grDIBajPQ5JsnoD/53SGxesd+bomPIQ11/SnYXT1SZnB5aJhuk3Ag=="/>
         </item>
     </channel>
 </rss>
