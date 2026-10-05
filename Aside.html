@@ -20,14 +20,29 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.0.5 -->
+<!-- notes-for: 2.0.6 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 2.0.5</h2>
-<p class="intro">a small fix for the first start after installing.</p>
-<h3>first start</h3>
+<h2>Aside 2.0.6</h2>
+<p class="intro">makes recording and dictation hold up when you switch microphones or use airpods.</p>
+<h3>recording</h3>
 <ul>
-  <li>the window has its sidebar right after onboarding, with settings at the bottom left and the record button next to it. before, a new install showed a single card without the settings button until the first meeting.</li>
+  <li>if your mic stops delivering sound during a meeting, aside warns you within about 30 seconds, also in meetings without a call, and repairs the mic at the same time.</li>
+  <li>switching airpods in and out during a meeting no longer makes aside rebuild the mic again and again.</li>
+  <li>a mic that gets stuck while switching devices no longer stops the rest of the recording.</li>
+</ul>
+<h3>dictation</h3>
+<ul>
+  <li>with airpods or another bluetooth headset connected, dictation starts in a fraction of a second instead of up to two seconds. the first dictation after starting aside can still take a moment.</li>
+  <li>dictation no longer stops working after the mac's audio system restarts or your devices change.</li>
+</ul>
+<h3>transcript</h3>
+<ul>
+  <li>on a call over your laptop speakers, the other side is much less often labelled as you.</li>
+</ul>
+<h3>crash reports</h3>
+<ul>
+  <li>if you share crash reports, a report about aside quitting unexpectedly now also says how long it ran, whether it was recording, dictating or being set up, how much memory it used and whether mic or screen recording access changed. still never audio, transcripts or note contents.</li>
 </ul>
 </body>
 </html>
