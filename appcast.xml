@@ -3,10 +3,10 @@
     <channel>
         <title>Aside</title>
         <item>
-            <title>2.0.6</title>
-            <pubDate>Mon, 05 Oct 2026 14:51:30 +0200</pubDate>
-            <sparkle:version>80</sparkle:version>
-            <sparkle:shortVersionString>2.0.6</sparkle:shortVersionString>
+            <title>2.0.7</title>
+            <pubDate>Wed, 07 Oct 2026 09:09:30 +0200</pubDate>
+            <sparkle:version>81</sparkle:version>
+            <sparkle:shortVersionString>2.0.7</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,35 +31,21 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.0.6 -->
+<!-- notes-for: 2.0.7 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 2.0.6</h2>
-<p class="intro">makes recording and dictation hold up when you switch microphones or use airpods.</p>
-<h3>recording</h3>
-<ul>
-  <li>if your mic stops delivering sound during a meeting, aside warns you within about 30 seconds, also in meetings without a call, and repairs the mic at the same time.</li>
-  <li>switching airpods in and out during a meeting no longer makes aside rebuild the mic again and again.</li>
-  <li>a mic that gets stuck while switching devices no longer stops the rest of the recording.</li>
-</ul>
+<h2>Aside 2.0.7</h2>
+<p class="intro">fixes dictation going silent with airpods.</p>
 <h3>dictation</h3>
 <ul>
-  <li>with airpods or another bluetooth headset connected, dictation starts in a fraction of a second instead of up to two seconds. the first dictation after starting aside can still take a moment.</li>
-  <li>dictation no longer stops working after the mac's audio system restarts or your devices change.</li>
-</ul>
-<h3>transcript</h3>
-<ul>
-  <li>on a call over your laptop speakers, the other side is much less often labelled as you.</li>
-</ul>
-<h3>crash reports</h3>
-<ul>
-  <li>if you share crash reports, a report about aside quitting unexpectedly now also says how long it ran, whether it was recording, dictating or being set up, how much memory it used and whether mic or screen recording access changed. still never audio, transcripts or note contents.</li>
+  <li>after you put on airpods or woke your mac, dictation could hear nothing and say "nothing was understood" on every try. it now notices a microphone that delivers no sound within a second and reopens it during the same dictation.</li>
+  <li>the first dictation after connecting a bluetooth headset gets more time to open the microphone, so it no longer gives up after three seconds.</li>
 </ul>
 </body>
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.0.6/Aside-Update.zip" length="147364441" type="application/octet-stream" sparkle:edSignature="x5DYRci08qxABnoVSwh7iZkYT3Z380dzJDkiAH6xDtXW4PvRvSn9Cq2SUOu4Lgi7Paakssbsv0pw/4Y3d/tNBg=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.0.7/Aside-Update.zip" length="147435145" type="application/octet-stream" sparkle:edSignature="6l5iEAUgdAmUJg0kA8r+YXwoV9OhB1JacBMbDI95NZZ52KBCsKFd8Kg8y0Qq+jdZ6b1TF4NURglxdS6X2er+AA=="/>
         </item>
     </channel>
 </rss>
