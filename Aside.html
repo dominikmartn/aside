@@ -20,15 +20,17 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.0.7 -->
+<!-- notes-for: 2.1 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 2.0.7</h2>
-<p class="intro">fixes dictation going silent with airpods.</p>
-<h3>dictation</h3>
+<h2>Ocelli 2.1</h2>
+<p class="intro">Aside Notes is now Ocelli. Same app, same license, same notes.</p>
 <ul>
-  <li>after you put on airpods or woke your mac, dictation could hear nothing and say "nothing was understood" on every try. it now notices a microphone that delivers no sound within a second and reopens it during the same dictation.</li>
-  <li>the first dictation after connecting a bluetooth headset gets more time to open the microphone, so it no longer gives up after three seconds.</li>
+  <li>the app renames itself to Ocelli.app on first launch. your notes, settings, permissions and login item stay as they are.</li>
+  <li>agents: the MCP server is now called ocelli, so its tools are mcp__ocelli__*. Claude Code and Codex registrations made by the app are moved over automatically.</li>
+  <li>thirteen app icons to pick from in Settings › App Icon.</li>
+  <li>dictation no longer goes silent after you put on airpods or wake your mac, and with airpods connected it starts right away.</li>
+  <li>your own Anthropic key now runs on Claude Haiku 5.5.</li>
 </ul>
 </body>
 </html>

@@ -1,12 +1,12 @@
 <?xml version="1.0" standalone="yes"?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
-        <title>Aside</title>
+        <title>Ocelli</title>
         <item>
-            <title>2.0.7</title>
-            <pubDate>Wed, 07 Oct 2026 09:09:30 +0200</pubDate>
-            <sparkle:version>81</sparkle:version>
-            <sparkle:shortVersionString>2.0.7</sparkle:shortVersionString>
+            <title>2.1</title>
+            <pubDate>Mon, 12 Oct 2026 16:11:40 +0200</pubDate>
+            <sparkle:version>83</sparkle:version>
+            <sparkle:shortVersionString>2.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,21 +31,23 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.0.7 -->
+<!-- notes-for: 2.1 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Aside 2.0.7</h2>
-<p class="intro">fixes dictation going silent with airpods.</p>
-<h3>dictation</h3>
+<h2>Ocelli 2.1</h2>
+<p class="intro">Aside Notes is now Ocelli. Same app, same license, same notes.</p>
 <ul>
-  <li>after you put on airpods or woke your mac, dictation could hear nothing and say "nothing was understood" on every try. it now notices a microphone that delivers no sound within a second and reopens it during the same dictation.</li>
-  <li>the first dictation after connecting a bluetooth headset gets more time to open the microphone, so it no longer gives up after three seconds.</li>
+  <li>the app renames itself to Ocelli.app on first launch. your notes, settings, permissions and login item stay as they are.</li>
+  <li>agents: the MCP server is now called ocelli, so its tools are mcp__ocelli__*. Claude Code and Codex registrations made by the app are moved over automatically.</li>
+  <li>thirteen app icons to pick from in Settings › App Icon.</li>
+  <li>dictation no longer goes silent after you put on airpods or wake your mac, and with airpods connected it starts right away.</li>
+  <li>your own Anthropic key now runs on Claude Haiku 5.5.</li>
 </ul>
 </body>
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.0.7/Aside-Update.zip" length="147435145" type="application/octet-stream" sparkle:edSignature="6l5iEAUgdAmUJg0kA8r+YXwoV9OhB1JacBMbDI95NZZ52KBCsKFd8Kg8y0Qq+jdZ6b1TF4NURglxdS6X2er+AA=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.1/Aside-Update.zip" length="169407604" type="application/octet-stream" sparkle:edSignature="H9Ys4T1EaaR4C/b9gC6oIuJAPqedXlipeHjR9ijSoJImLeo0h61YHUIV5sZBhukOrgxjqBUCFQPdQOodWh9QCQ=="/>
         </item>
     </channel>
 </rss>
