@@ -3,10 +3,10 @@
     <channel>
         <title>Ocelli</title>
         <item>
-            <title>2.1</title>
-            <pubDate>Mon, 12 Oct 2026 16:11:40 +0200</pubDate>
-            <sparkle:version>83</sparkle:version>
-            <sparkle:shortVersionString>2.1</sparkle:shortVersionString>
+            <title>2.2</title>
+            <pubDate>Wed, 14 Oct 2026 19:20:10 +0200</pubDate>
+            <sparkle:version>84</sparkle:version>
+            <sparkle:shortVersionString>2.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,23 +31,24 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.1 -->
+<!-- notes-for: 2.2 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Ocelli 2.1</h2>
-<p class="intro">Aside Notes is now Ocelli. Same app, same license, same notes.</p>
+<h2>Ocelli 2.2</h2>
+<p class="intro">A new speech engine. Dictation and transcripts are now much faster.</p>
 <ul>
-  <li>The app renames itself to Ocelli.app on first launch. Your notes, settings, permissions and login item stay as they are.</li>
-  <li>Agents: the MCP server is now called ocelli, so its tools are mcp__ocelli__*. Claude Code and Codex registrations made by the app are moved over automatically.</li>
-  <li>Thirteen app icons to pick from in Settings › App Icon.</li>
-  <li>Dictation no longer goes silent after you put on AirPods or wake your Mac, and with AirPods connected it starts right away.</li>
-  <li>Your own Anthropic key now runs on Claude Haiku 5.5.</li>
+  <li>Ocelli now transcribes with NVIDIA Parakeet. Dictation is ready almost instantly after launch and needs far less memory.</li>
+  <li>Each dictation goes to the right model by itself: Parakeet for its 25 European languages, Whisper for everything else. You can still pick Whisper for everything in Settings › General › Speech.</li>
+  <li>English meetings are transcribed by Parakeet. Meetings in other languages get their final transcript from Whisper, which Ocelli downloads in the background if it isn't on your Mac yet.</li>
+  <li>Updates now wait while you record, dictate or while a note is still being written.</li>
+  <li>Opening Ocelli straight from the disk image now moves it to Applications for you.</li>
+  <li>This update is larger than usual because it includes the new speech model.</li>
 </ul>
 </body>
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.1/Aside-Update.zip" length="169407604" type="application/octet-stream" sparkle:edSignature="H9Ys4T1EaaR4C/b9gC6oIuJAPqedXlipeHjR9ijSoJImLeo0h61YHUIV5sZBhukOrgxjqBUCFQPdQOodWh9QCQ=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.2/Aside-Update.zip" length="744674832" type="application/octet-stream" sparkle:edSignature="K0iuSTsShH9NIaEJxDTJMBw6Fdkx8KsakGjPtqzhYZhkbKJNSrLi2QZTxTdijUtYYLInQXlKzCbxxcTh6g6WCQ=="/>
         </item>
     </channel>
 </rss>

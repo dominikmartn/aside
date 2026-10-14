@@ -20,17 +20,18 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.1 -->
+<!-- notes-for: 2.2 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Ocelli 2.1</h2>
-<p class="intro">Aside Notes is now Ocelli. Same app, same license, same notes.</p>
+<h2>Ocelli 2.2</h2>
+<p class="intro">A new speech engine. Dictation and transcripts are now much faster.</p>
 <ul>
-  <li>the app renames itself to Ocelli.app on first launch. your notes, settings, permissions and login item stay as they are.</li>
-  <li>agents: the MCP server is now called ocelli, so its tools are mcp__ocelli__*. Claude Code and Codex registrations made by the app are moved over automatically.</li>
-  <li>thirteen app icons to pick from in Settings › App Icon.</li>
-  <li>dictation no longer goes silent after you put on airpods or wake your mac, and with airpods connected it starts right away.</li>
-  <li>your own Anthropic key now runs on Claude Haiku 5.5.</li>
+  <li>Ocelli now transcribes with NVIDIA Parakeet. Dictation is ready almost instantly after launch and needs far less memory.</li>
+  <li>Each dictation goes to the right model by itself: Parakeet for its 25 European languages, Whisper for everything else. You can still pick Whisper for everything in Settings › General › Speech.</li>
+  <li>English meetings are transcribed by Parakeet. Meetings in other languages get their final transcript from Whisper, which Ocelli downloads in the background if it isn't on your Mac yet.</li>
+  <li>Updates now wait while you record, dictate or while a note is still being written.</li>
+  <li>Opening Ocelli straight from the disk image now moves it to Applications for you.</li>
+  <li>This update is larger than usual because it includes the new speech model.</li>
 </ul>
 </body>
 </html>
