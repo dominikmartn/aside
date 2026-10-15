@@ -20,18 +20,18 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.2 -->
+<!-- notes-for: 2.2.1 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Ocelli 2.2</h2>
-<p class="intro">A new speech engine. Dictation and transcripts are now much faster.</p>
+<h2>Ocelli 2.2.1</h2>
+<p class="intro">Bring in recordings you made elsewhere, and let dictation send for you.</p>
 <ul>
-  <li>Ocelli now transcribes with NVIDIA Parakeet. Dictation is ready almost instantly after launch and needs far less memory.</li>
-  <li>Each dictation goes to the right model by itself: Parakeet for its 25 European languages, Whisper for everything else. You can still pick Whisper for everything in Settings › General › Speech.</li>
-  <li>English meetings are transcribed by Parakeet. Meetings in other languages get their final transcript from Whisper, which Ocelli downloads in the background if it isn't on your Mac yet.</li>
-  <li>Updates now wait while you record, dictate or while a note is still being written.</li>
-  <li>Opening Ocelli straight from the disk image now moves it to Applications for you.</li>
-  <li>This update is larger than usual because it includes the new speech model.</li>
+  <li>Import recordings. Drop an audio or video file on the library window, or choose one in Settings. It becomes a transcript and a note, just like a recorded meeting.</li>
+  <li>Auto Send for dictation. Ocelli can press Return for you after pasting, per app.</li>
+  <li>Dictation starts faster and no longer misroutes takes that contain pauses.</li>
+  <li>Solo recordings are no longer split into two speakers.</li>
+  <li>Summaries retry automatically when the AI service has a hiccup.</li>
+  <li>Cleaner status rows in the sidebar.</li>
 </ul>
 </body>
 </html>
