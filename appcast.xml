@@ -3,10 +3,10 @@
     <channel>
         <title>Ocelli</title>
         <item>
-            <title>2.3</title>
-            <pubDate>Wed, 28 Oct 2026 15:41:44 +0100</pubDate>
-            <sparkle:version>86</sparkle:version>
-            <sparkle:shortVersionString>2.3</sparkle:shortVersionString>
+            <title>2.3.1</title>
+            <pubDate>Thu, 29 Oct 2026 06:51:56 +0100</pubDate>
+            <sparkle:version>87</sparkle:version>
+            <sparkle:shortVersionString>2.3.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,11 +31,18 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.3 -->
+<!-- notes-for: 2.3.1 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Ocelli 2.3</h2>
-<p class="intro">A new look for meetings and dictation.</p>
+<h2>Ocelli 2.3.1</h2>
+<p class="intro">A fix for running Ocelli on your own AI server.</p>
+<ul>
+  <li>Custom endpoint shows whether your server works, right under its fields. It checks when you leave the fields or press Return.</li>
+  <li>If macOS keeps Ocelli off your local network, for example from Ollama on another computer, the check says so and where to allow it.</li>
+  <li>Send feedback reaches us again.</li>
+</ul>
+<!-- 2.3's notes stay below, so a Mac that skips 2.3 still sees what it brought. -->
+<h3>New in 2.3</h3>
 <ul>
   <li>The meeting panel can float. Choose Notch or Floating in Settings. On a Mac without a notch it floats on its own.</li>
   <li>A new voice picture. A dotted weave follows your voice in the dictation pill and while a meeting records.</li>
@@ -52,7 +59,7 @@
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.3/Aside-Update.zip" length="746843644" type="application/octet-stream" sparkle:edSignature="MRSlzDebKxB8t8sQBvNDeLvaCXDwyZwxhzIDTX+5rXCpHJLer8gtVYiwyYoWWuOVdz8g68hcNoF+o5Ya7wWOBA=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.3.1/Aside-Update.zip" length="746851126" type="application/octet-stream" sparkle:edSignature="plRaMOduVxmAZxylrF2hkcdSAF3Gj2dsaA4CD5a60h0CmNeMxDyTU8yLnkF+v35y/yAp0Opj+pjAA4dbJzUvBA=="/>
         </item>
     </channel>
 </rss>
