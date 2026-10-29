@@ -3,10 +3,10 @@
     <channel>
         <title>Ocelli</title>
         <item>
-            <title>2.3.1</title>
-            <pubDate>Thu, 29 Oct 2026 06:51:56 +0100</pubDate>
-            <sparkle:version>87</sparkle:version>
-            <sparkle:shortVersionString>2.3.1</sparkle:shortVersionString>
+            <title>2.3.2</title>
+            <pubDate>Thu, 29 Oct 2026 20:30:25 +0100</pubDate>
+            <sparkle:version>88</sparkle:version>
+            <sparkle:shortVersionString>2.3.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,17 +31,22 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.3.1 -->
+<!-- notes-for: 2.3.2 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Ocelli 2.3.1</h2>
-<p class="intro">A fix for running Ocelli on your own AI server.</p>
+<h2>Ocelli 2.3.2</h2>
+<p class="intro">Smaller updates and a calmer dictation pill.</p>
 <ul>
-  <li>Custom endpoint shows whether your server works, right under its fields. It checks when you leave the fields or press Return.</li>
-  <li>If macOS keeps Ocelli off your local network, for example from Ollama on another computer, the check says so and where to allow it.</li>
+  <li>Smaller updates. Coming from a recent version, Ocelli now downloads only what changed, usually a few MB instead of the whole app.</li>
+  <li>While Ocelli turns your dictation into text, a soft pulse of light runs through the pill.</li>
+  <li>The tick after a dictation has its whole outline again.</li>
+</ul>
+<!-- 2.3.1's and 2.3's notes stay below, so a Mac that skips them still sees what they brought. -->
+<h3>In 2.3.1</h3>
+<ul>
+  <li>Custom endpoint shows whether your server works, right under its fields, and says so when macOS keeps Ocelli off your local network.</li>
   <li>Send feedback reaches us again.</li>
 </ul>
-<!-- 2.3's notes stay below, so a Mac that skips 2.3 still sees what it brought. -->
 <h3>New in 2.3</h3>
 <ul>
   <li>The meeting panel can float. Choose Notch or Floating in Settings. On a Mac without a notch it floats on its own.</li>
@@ -59,7 +64,12 @@
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.3.1/Aside-Update.zip" length="746851126" type="application/octet-stream" sparkle:edSignature="plRaMOduVxmAZxylrF2hkcdSAF3Gj2dsaA4CD5a60h0CmNeMxDyTU8yLnkF+v35y/yAp0Opj+pjAA4dbJzUvBA=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.3.2/Aside-Update.zip" length="746850485" type="application/octet-stream" sparkle:edSignature="8IrTL/eYTCUqoULh+vRc2XxCT93xE9ep7TYURUMCDbtNYULB74CHP5zRlsiAzk2bnDLXIOW+lz63mDC+fcfOBg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.3.2/Ocelli88-87.delta" sparkle:deltaFrom="87" length="1304482" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="LEpseWqMYHAKW4ax15Y8BeVznRYxw+Tu3j36+1e2KE4c524BZ0WVkAMPe5OW872eE8zrQqZyeq8EQQvkVP8KBQ=="/>
+                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.3.2/Ocelli88-86.delta" sparkle:deltaFrom="86" length="1920078" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="kGMjPTLqpEG1IGzhJwZLN+q8f9v5fFRY6fHyubmOUIeGmV2VmbfvumGdkN8NA9Rfks2iIITvDsXwzPT1Rf93CA=="/>
+                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.3.2/Ocelli88-85.delta" sparkle:deltaFrom="85" length="6126182" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="jAtMNauuKJLUinEunxjG3Y9KPKsNNmsqk9+2n6kzIChtIAewZOed19LRG+/LxeZQvPJL/xl94ijzHUW5j4fkDQ=="/>
+            </sparkle:deltas>
         </item>
     </channel>
 </rss>
