@@ -3,10 +3,10 @@
     <channel>
         <title>Ocelli</title>
         <item>
-            <title>2.3.2</title>
-            <pubDate>Thu, 29 Oct 2026 20:30:25 +0100</pubDate>
-            <sparkle:version>88</sparkle:version>
-            <sparkle:shortVersionString>2.3.2</sparkle:shortVersionString>
+            <title>2.3.3</title>
+            <pubDate>Fri, 30 Oct 2026 13:36:30 +0100</pubDate>
+            <sparkle:version>89</sparkle:version>
+            <sparkle:shortVersionString>2.3.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,17 +31,23 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.3.2 -->
+<!-- notes-for: 2.3.3 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Ocelli 2.3.2</h2>
-<p class="intro">Smaller updates and a calmer dictation pill.</p>
+<h2>Ocelli 2.3.3</h2>
+<p class="intro">Dictation is now free, for everyone, with no time limit. And Ocelli works for teams.</p>
+<ul>
+  <li>Dictation is free. No trial, no countdown, in every app.</li>
+  <li>Ocelli for teams: share meeting notes with your team, end-to-end encrypted. Everyone on the team gets Ocelli Pro and Ocelli AI. Start under Settings &rsaquo; Team &rsaquo; Create a team.</li>
+  <li>Teams cost $5 per person a month billed yearly, or $6 month to month, plus tax, for 3 people or more. Add people any time; you pay in your browser through Stripe.</li>
+</ul>
+<h3>In 2.3.2</h3>
 <ul>
   <li>Smaller updates. Coming from a recent version, Ocelli now downloads only what changed, usually a few MB instead of the whole app.</li>
   <li>While Ocelli turns your dictation into text, a soft pulse of light runs through the pill.</li>
   <li>The tick after a dictation has its whole outline again.</li>
 </ul>
-<!-- 2.3.1's and 2.3's notes stay below, so a Mac that skips them still sees what they brought. -->
+<!-- 2.3.2's, 2.3.1's and 2.3's notes stay below, so a Mac that skips them still sees what they brought. -->
 <h3>In 2.3.1</h3>
 <ul>
   <li>Custom endpoint shows whether your server works, right under its fields, and says so when macOS keeps Ocelli off your local network.</li>
@@ -64,11 +70,11 @@
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.3.2/Aside-Update.zip" length="746850485" type="application/octet-stream" sparkle:edSignature="8IrTL/eYTCUqoULh+vRc2XxCT93xE9ep7TYURUMCDbtNYULB74CHP5zRlsiAzk2bnDLXIOW+lz63mDC+fcfOBg=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.3.3/Aside-Update.zip" length="748608400" type="application/octet-stream" sparkle:edSignature="Tb2hK0qCSgNIC7PBpg1OUWqZ4glx9a49Ny5hPavZ7b/XEnTnPVHXYRZ+zY3fzU2A5atKtk8YTQzODUx0NVcNBw=="/>
             <sparkle:deltas>
-                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.3.2/Ocelli88-87.delta" sparkle:deltaFrom="87" length="1304482" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="LEpseWqMYHAKW4ax15Y8BeVznRYxw+Tu3j36+1e2KE4c524BZ0WVkAMPe5OW872eE8zrQqZyeq8EQQvkVP8KBQ=="/>
-                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.3.2/Ocelli88-86.delta" sparkle:deltaFrom="86" length="1920078" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="kGMjPTLqpEG1IGzhJwZLN+q8f9v5fFRY6fHyubmOUIeGmV2VmbfvumGdkN8NA9Rfks2iIITvDsXwzPT1Rf93CA=="/>
-                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.3.2/Ocelli88-85.delta" sparkle:deltaFrom="85" length="6126182" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="jAtMNauuKJLUinEunxjG3Y9KPKsNNmsqk9+2n6kzIChtIAewZOed19LRG+/LxeZQvPJL/xl94ijzHUW5j4fkDQ=="/>
+                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.3.3/Ocelli89-88.delta" sparkle:deltaFrom="88" length="4425570" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="t+pbbNJps8rjAbbsxdxGlXsnsHVNziznNxFjL/qzVNwSwa/uDAR/Se4vCI/JvkqsEKWSZj15qU0YOvLRPWdrCQ=="/>
+                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.3.3/Ocelli89-87.delta" sparkle:deltaFrom="87" length="4444718" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="flTxQ4HLheBP9BdGRm9PFxO72MmLBjuNIj/NxqRww0TSxGvGDMY6k/mBVYs9oFv3YZVte7AzBzlQU4v1fgCoBQ=="/>
+                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.3.3/Ocelli89-86.delta" sparkle:deltaFrom="86" length="4469866" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gfCR8uDv/WyaZ7WQcX5/ptBUG4GWd7FTp8nuzpiIE/1YUTUSn8dMFYa/YNdcwri2yBK4Ot7Qv+CLUEIKiuZYCA=="/>
             </sparkle:deltas>
         </item>
     </channel>
