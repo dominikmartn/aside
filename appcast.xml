@@ -3,10 +3,11 @@
     <channel>
         <title>Ocelli</title>
         <item>
-            <title>2.4</title>
-            <pubDate>Sat, 07 Nov 2026 08:24:34 +0100</pubDate>
-            <sparkle:version>90</sparkle:version>
-            <sparkle:shortVersionString>2.4</sparkle:shortVersionString>
+            <title>2.5</title>
+            <pubDate>Tue, 10 Nov 2026 20:20:14 +0100</pubDate>
+            <sparkle:phasedRolloutInterval>86400</sparkle:phasedRolloutInterval>
+            <sparkle:version>91</sparkle:version>
+            <sparkle:shortVersionString>2.5</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -31,11 +32,18 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.4 -->
+<!-- notes-for: 2.5 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Ocelli 2.4</h2>
-<p class="intro">A mirror before your meetings, dictations up to 30 minutes, and updates that install themselves.</p>
+<h2>Ocelli 2.5</h2>
+<p class="intro">Ocelli is now on iPhone too. Pair it with your Mac, and one purchase covers both.</p>
+<ul>
+  <li>Pair your iPhone. Get Ocelli for iPhone from the App Store, open Settings &rsaquo; iPhone on your Mac and point the phone at the code. Your notes sync between the two, end-to-end encrypted.</li>
+  <li>One purchase for Mac and iPhone. Buy Ocelli once, on our website or in the iPhone app, and it unlocks both.</li>
+  <li>Your Mac can write the notes for meetings you record on the iPhone. Turn on &ldquo;Notes for iPhone recordings&rdquo; in Settings &rsaquo; iPhone. It stays off until you turn it on, and it names the AI that will read the transcript.</li>
+</ul>
+<!-- 2.4's notes and the ones before stay below, so a Mac that skips them still sees what they brought. -->
+<h3>In 2.4</h3>
 <ul>
   <li>A mirror before your calls. When the pill shows an upcoming meeting, it has a camera button. Click it and a round mirror opens under the pill. Only you see it, nothing is recorded, and it never turns on the microphone. Pick a camera there, or turn on Ring light in a dark room.</li>
   <li>Dictations can run up to 30 minutes, up from 5.</li>
@@ -45,7 +53,6 @@
   <li>Fixed a crash that could happen when your AirPods reconnected during a meeting.</li>
   <li>Updates download in the background and install the next time Ocelli quits. You can turn this off in Settings, under About.</li>
 </ul>
-<!-- 2.3.3's notes and the ones before stay below, so a Mac that skips them still sees what they brought. -->
 <h3>In 2.3.3</h3>
 <ul>
   <li>Dictation is free. No trial, no countdown, in every app.</li>
@@ -80,11 +87,11 @@
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.4/Aside-Update.zip" length="748825524" type="application/octet-stream" sparkle:edSignature="MAjhTEY0YcJIH+MTWkrYFZ+bWfYZ1Ri7VMtrgbHPuKMRzk7Hvobeykq9kSGWbjDJEYMNu26A1oCKetCGFpEkAA=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.5/Aside-Update.zip" length="749796754" type="application/octet-stream" sparkle:edSignature="cXmZI8ooFIcOd+d+bjZ0r8n6CsN/bYIem15e+RzUfQthvNavkXHY/ucy5ks4Ja0RzDPRdPaTpET4QlolbFbgDg=="/>
             <sparkle:deltas>
-                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.4/Ocelli90-89.delta" sparkle:deltaFrom="89" length="3050934" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="YkG8wi20j2Tti8uikWQ/a5Z23f2YPsjn0HOhdMr2g3bTIPBLNgJxB8sO7sVIIwbC92AIxdZXDDqK/D+DSgxqBg=="/>
-                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.4/Ocelli90-88.delta" sparkle:deltaFrom="88" length="4854998" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="fc+S6VAAOWXDIj0kXlhcwYXmX1IvI0dWedTvxBilqpR59oVy2DsRGX9AYHWNM9Vpe5LLK8bSJbcZAZbwu7HJBw=="/>
-                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.4/Ocelli90-87.delta" sparkle:deltaFrom="87" length="4854658" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="iSt0zushDVlFUBxmCOdnqsNp1zCWD0cd7LXf/BG5wuM/9iogOyw4gjkm3/R3FDMzinTK9xpTWLtz2dv5ieL9Dg=="/>
+                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.5/Ocelli91-90.delta" sparkle:deltaFrom="90" length="3998462" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gSNcFRr5O4KSiT79MtO4XPfXT891R7BrA1hzkbgJhWeIjHNEOxqY1JClf/bLLhZyZVI703yJ2W2ziXfiMwU3Cw=="/>
+                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.5/Ocelli91-89.delta" sparkle:deltaFrom="89" length="4458422" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="PcCZz8B39J23P4zkZdy3LzCWr0sRL2YWHBMh8TvATNfPKtjJVVqCOUnTV+sUba5692Gil0mbqy5C5GiPkagiCA=="/>
+                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.5/Ocelli91-88.delta" sparkle:deltaFrom="88" length="5981302" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="kvI8ZTrz8WVRBdCIiaG2dOaHv5kGxPWaskv9YgrD+8PTOo7VIVbSEIzhxBALRC2Why09kV+LBka4jONV12VPCg=="/>
             </sparkle:deltas>
         </item>
     </channel>
