@@ -3,11 +3,11 @@
     <channel>
         <title>Ocelli</title>
         <item>
-            <title>2.5</title>
-            <pubDate>Tue, 10 Nov 2026 20:20:14 +0100</pubDate>
-            <sparkle:phasedRolloutInterval>86400</sparkle:phasedRolloutInterval>
-            <sparkle:version>91</sparkle:version>
-            <sparkle:shortVersionString>2.5</sparkle:shortVersionString>
+            <title>2.5.1</title>
+            <pubDate>Fri, 13 Nov 2026 07:03:49 +0100</pubDate>
+            <sparkle:phasedRolloutInterval>10800</sparkle:phasedRolloutInterval>
+            <sparkle:version>92</sparkle:version>
+            <sparkle:shortVersionString>2.5.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -32,13 +32,18 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.5 -->
+<!-- notes-for: 2.5.1 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Ocelli 2.5</h2>
-<p class="intro">Ocelli is now on iPhone too. Pair it with your Mac, and one purchase covers both.</p>
+<h2>Ocelli 2.5.1</h2>
 <ul>
-  <li>Pair your iPhone. Get Ocelli for iPhone from the App Store, open Settings &rsaquo; iPhone on your Mac and point the phone at the code. Your notes sync between the two, end-to-end encrypted.</li>
+  <li>A Mac without a license can now connect the iPhone app. Before this update it stopped with &ldquo;This Mac is no longer allowed to sync.&rdquo;</li>
+  <li>The iPhone card on your Mac now shows the code right in the card. Click Connect iPhone and hold your iPhone up to the code. If your iPhone asks over Wi-Fi instead, the card shows the six words to check. When your iPhone is connected, the card says so.</li>
+  <li>Settings &rsaquo; iPhone shows the code the same way.</li>
+</ul>
+<h3>In 2.5</h3>
+<ul>
+  <li>Ocelli is now on iPhone too. Pair your iPhone. Get Ocelli for iPhone from the App Store, open Settings &rsaquo; iPhone on your Mac and point the phone at the code. Your notes sync between the two, end-to-end encrypted.</li>
   <li>One purchase for Mac and iPhone. Buy Ocelli once, on our website or in the iPhone app, and it unlocks both.</li>
   <li>Your Mac can write the notes for meetings you record on the iPhone. Turn on &ldquo;Notes for iPhone recordings&rdquo; in Settings &rsaquo; iPhone. It stays off until you turn it on, and it names the AI that will read the transcript.</li>
 </ul>
@@ -87,11 +92,11 @@
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.5/Aside-Update.zip" length="749796754" type="application/octet-stream" sparkle:edSignature="cXmZI8ooFIcOd+d+bjZ0r8n6CsN/bYIem15e+RzUfQthvNavkXHY/ucy5ks4Ja0RzDPRdPaTpET4QlolbFbgDg=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.5.1/Aside-Update.zip" length="749815227" type="application/octet-stream" sparkle:edSignature="21+tUgG6bAbc6Ie+1EGDEZmRpsA47XhVmX7BHrqmgA5cvW1E4hXvmc9dRnSm1nVT9DrtSf9BBp7kB+IragxMAw=="/>
             <sparkle:deltas>
-                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.5/Ocelli91-90.delta" sparkle:deltaFrom="90" length="3998462" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gSNcFRr5O4KSiT79MtO4XPfXT891R7BrA1hzkbgJhWeIjHNEOxqY1JClf/bLLhZyZVI703yJ2W2ziXfiMwU3Cw=="/>
-                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.5/Ocelli91-89.delta" sparkle:deltaFrom="89" length="4458422" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="PcCZz8B39J23P4zkZdy3LzCWr0sRL2YWHBMh8TvATNfPKtjJVVqCOUnTV+sUba5692Gil0mbqy5C5GiPkagiCA=="/>
-                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.5/Ocelli91-88.delta" sparkle:deltaFrom="88" length="5981302" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="kvI8ZTrz8WVRBdCIiaG2dOaHv5kGxPWaskv9YgrD+8PTOo7VIVbSEIzhxBALRC2Why09kV+LBka4jONV12VPCg=="/>
+                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.5.1/Ocelli92-91.delta" sparkle:deltaFrom="91" length="2265954" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="mlor1b3gmbGiTVHfT4Q0WuroaiDafBme7YPyRSosyKJl++d6RYbxABp85oqqyZ88Dfzvj09q+oU8mf4U4S/gAg=="/>
+                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.5.1/Ocelli92-90.delta" sparkle:deltaFrom="90" length="4035438" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="sI1FYsSwNmSywA67RBkQh1ouHmKzs3ij/hb1y8qXARvkR1yXI86EVa1grLZYcg1UEcAJLF32RW4HQKHABkGlCA=="/>
+                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.5.1/Ocelli92-89.delta" sparkle:deltaFrom="89" length="4504790" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="mlR1Oz1Zzsn6ikySPlBp+6r3LbGryBABM/ehgfhhhkoFJewApDbtiPZ7UAJFn4X1v19ZlF5OSvj8bvc6jHvICA=="/>
             </sparkle:deltas>
         </item>
     </channel>
