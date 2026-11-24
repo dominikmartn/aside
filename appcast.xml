@@ -3,11 +3,10 @@
     <channel>
         <title>Ocelli</title>
         <item>
-            <title>2.5.1</title>
-            <pubDate>Fri, 13 Nov 2026 07:03:49 +0100</pubDate>
-            <sparkle:phasedRolloutInterval>10800</sparkle:phasedRolloutInterval>
-            <sparkle:version>92</sparkle:version>
-            <sparkle:shortVersionString>2.5.1</sparkle:shortVersionString>
+            <title>2.6</title>
+            <pubDate>Tue, 24 Nov 2026 08:50:33 +0100</pubDate>
+            <sparkle:version>93</sparkle:version>
+            <sparkle:shortVersionString>2.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <!DOCTYPE html>
@@ -32,10 +31,20 @@
 </style>
 </head>
 <body>
-<!-- notes-for: 2.5.1 -->
+<!-- notes-for: 2.6 -->
 <!-- ^ release.sh REFUSES to publish unless this matches MARKETING_VERSION. Bumping the version?
      Rewrite the body below for THIS release's real changes, THEN set the marker to the new version. -->
-<h2>Ocelli 2.5.1</h2>
+<h2>Ocelli 2.6</h2>
+<ul>
+  <li>Ocelli can now see what is shared on screen in your calls, for everyone. It stays off until you turn it on, and the card after this update shows what it does. During a call you can pause the screenshots. If you take back the Screen Recording permission, Ocelli stops looking right away.</li>
+  <li>When you ask an agent about a past meeting, Ocelli now points it to the full transcript and, if there are screenshots, to what was on screen, so it no longer answers from the summary alone.</li>
+  <li>After you stop a meeting, Ocelli shows how far it is: transcribing, telling the speakers apart, writing the note. It never shows 100% before the note is done.</li>
+  <li>New notes are written as minutes by default.</li>
+  <li>The note is written in the language the meeting was held in, and points the meeting settled go under Decisions.</li>
+  <li>The dictation pill now follows you to the desktop you are working on.</li>
+  <li>The prices in the app now match what checkout charges, including the lower prices in some countries, and they say whether tax is included.</li>
+</ul>
+<h3>In 2.5.1</h3>
 <ul>
   <li>A Mac without a license can now connect the iPhone app. Before this update it stopped with &ldquo;This Mac is no longer allowed to sync.&rdquo;</li>
   <li>The iPhone card on your Mac now shows the code right in the card. Click Connect iPhone and hold your iPhone up to the code. If your iPhone asks over Wi-Fi instead, the card shows the six words to check. When your iPhone is connected, the card says so.</li>
@@ -92,11 +101,11 @@
 </html>
 
             ]]></description>
-            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.5.1/Aside-Update.zip" length="749815227" type="application/octet-stream" sparkle:edSignature="21+tUgG6bAbc6Ie+1EGDEZmRpsA47XhVmX7BHrqmgA5cvW1E4hXvmc9dRnSm1nVT9DrtSf9BBp7kB+IragxMAw=="/>
+            <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.6/Aside-Update.zip" length="751315061" type="application/octet-stream" sparkle:edSignature="eXrKAOhrzo55/pHR8N972lOLQzKHma2/zmPVS5axU41i8th4cwT9ueKBGc88F/kssDt1Hzf/E5bmktbg42T6Dg=="/>
             <sparkle:deltas>
-                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.5.1/Ocelli92-91.delta" sparkle:deltaFrom="91" length="2265954" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="mlor1b3gmbGiTVHfT4Q0WuroaiDafBme7YPyRSosyKJl++d6RYbxABp85oqqyZ88Dfzvj09q+oU8mf4U4S/gAg=="/>
-                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.5.1/Ocelli92-90.delta" sparkle:deltaFrom="90" length="4035438" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="sI1FYsSwNmSywA67RBkQh1ouHmKzs3ij/hb1y8qXARvkR1yXI86EVa1grLZYcg1UEcAJLF32RW4HQKHABkGlCA=="/>
-                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.5.1/Ocelli92-89.delta" sparkle:deltaFrom="89" length="4504790" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="mlR1Oz1Zzsn6ikySPlBp+6r3LbGryBABM/ehgfhhhkoFJewApDbtiPZ7UAJFn4X1v19ZlF5OSvj8bvc6jHvICA=="/>
+                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.6/Ocelli93-92.delta" sparkle:deltaFrom="92" length="4590194" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="B0P1oIGqmZzO5QLZOFUkxJ1JVqwEZi0H8FFiBDECKAdMsMX58frOLSa18plJ7Nonp/aPCf8Av87B3MMkaPy8Cw=="/>
+                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.6/Ocelli93-91.delta" sparkle:deltaFrom="91" length="4650742" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="6qV+c3TUrQmOJzAHBQN8gSFEU6Ay5kMimbE//y1K2dKcKtcYT2hr7czJpiKVotrBFuMTYUa/XCI4M9K7a+MtBg=="/>
+                <enclosure url="https://github.com/dominikmartn/aside/releases/download/v2.6/Ocelli93-90.delta" sparkle:deltaFrom="90" length="5915710" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="IIEHJ01doFecAJTxEI0l+xgs+2JpI060toEUPfefh+GjPtQaAEjo7pX1VNf/cU6icKMms8Czr/6/A7yUeHdWAw=="/>
             </sparkle:deltas>
         </item>
     </channel>
